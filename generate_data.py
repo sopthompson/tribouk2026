@@ -108,11 +108,12 @@ SESSIONS = {
 def session(code):
     return [dict(time=t, name=n, uni=uni(n), title=ttl(n)) for (t, n) in SESSIONS[code]]
 
-def row(kind, time, label, who=None, sponsor=None, code=None):
+def row(kind, time, label, who=None, sponsor=None, code=None, bold=False):
     r = dict(kind=kind, time=time, label=label)
     if who: r["who"] = who
     if sponsor: r["sponsor"] = sponsor
     if code: r["talks"] = session(code)
+    if bold: r["bold"] = True
     return r
 
 days = [
@@ -129,7 +130,7 @@ days = [
    row("break", "13:10–13:50", "Lunch"),
    row("item",  "13:50–14:00", "Introduction to AMRC"),
    row("keynote","14:00–14:30","Keynote 2", who="Leon Proud"),
-   row("item",  "14:30–15:30", "Lab tours"),
+   row("item",  "14:30–15:30", "Lab tours", bold=True),
    row("item",  "15:30–15:55", "Networking & closing remarks"),
    row("break", "15:55–16:40", "Travel to University"),
    row("venue", "", "Mappin Hall"),

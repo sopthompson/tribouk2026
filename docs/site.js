@@ -63,8 +63,9 @@
           c.appendChild(t);
         });
       } else {
-        const ev = E("div", "ev" + (r.kind === "keynote" ? " key" : ""));
-        ev.innerHTML = (r.kind === "keynote" && r.who) ? `${esc(r.label)} — ${esc(r.who)}` : esc(r.label);
+        const ev = E("div", "ev" + (r.kind === "keynote" || r.bold ? " key" : ""));
+        ev.innerHTML = (r.kind === "keynote" && r.who) ? `${esc(r.label)} — ${esc(r.who)}`
+          : esc(r.label);
         if (r.sponsor) ev.innerHTML += `<span class="spon">${esc(r.sponsor)}</span>`;
         c.appendChild(ev);
       }

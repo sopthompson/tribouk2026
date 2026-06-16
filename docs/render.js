@@ -66,7 +66,8 @@
       } else {
         const lead = E("div", "lead-row");
         lead.innerHTML = (r.kind === "keynote" && r.who)
-          ? `${esc(r.label)} — <b>${esc(r.who)}</b>` : esc(r.label);
+          ? `${esc(r.label)} — <b>${esc(r.who)}</b>`
+          : (r.bold ? `<b>${esc(r.label)}</b>` : esc(r.label));
         if (r.sponsor) lead.innerHTML += `<span class="spon">${esc(r.sponsor)}</span>`;
         c.appendChild(lead);
       }
