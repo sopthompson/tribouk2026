@@ -1,4 +1,4 @@
-# --- Internal / sensitive: never publish ---
+# Local working files (not part of the published site)
 *.xlsx
 ~$*
 *.rtf
