@@ -12,6 +12,8 @@ _logos/
 
 # Root-level source images (already copied into docs/img/)
 /*.png
+/*.jpg
+/*.jpeg
 
 # OS junk
 .DS_Store

@@ -108,21 +108,23 @@
   /* ---------- SPONSORS (3 bands per page) ---------- */
   const band = (s) => {
     const b = E("div", "sponsor-band");
-    b.innerHTML = `<img src="${s.img}" alt="${esc(s.name)}">`;
+    const img = `<img src="${s.img}" alt="${esc(s.name)}">`;
+    b.innerHTML = s.url ? `<a href="${esc(s.url)}">${img}</a>` : img;
     return b;
   };
-  const sp1 = E("section", "sheet page-break");
-  sp1.appendChild(E("h1", "title", "Our Sponsors &amp; Partners"));
-  sp1.appendChild(E("p", "copy",
-    "TriboUK 2026 is made possible through the generous support of our sponsors and partners. "
-    + "We are grateful for their commitment to the tribology community and to early-career researchers."));
-  D.sponsors.slice(0, 3).forEach(s => sp1.appendChild(band(s)));
-  chrome(sp1, "Sponsors & Partners");
-  add(sp1);
-
-  const sp2 = E("section", "sheet page-break");
-  D.sponsors.slice(3).forEach(s => sp2.appendChild(band(s)));
-  sp2.appendChild(E("div", "sponsor-note", esc(D.sponsorNote)));
-  chrome(sp2, "Sponsors & Partners");
-  add(sp2);
+  const groups = [];
+  for (let i = 0; i < D.sponsors.length; i += 3) groups.push(D.sponsors.slice(i, i + 3));
+  groups.forEach((group, gi) => {
+    const sp = E("section", "sheet page-break");
+    if (gi === 0) {
+      sp.appendChild(E("h1", "title", "Our Sponsors &amp; Partners"));
+      sp.appendChild(E("p", "copy",
+        "TriboUK 2026 is made possible through the generous support of our sponsors and partners. "
+        + "We are grateful for their commitment to the tribology community and to early-career researchers."));
+    }
+    group.forEach(s => sp.appendChild(band(s)));
+    if (gi === groups.length - 1) sp.appendChild(E("div", "sponsor-note", esc(D.sponsorNote)));
+    chrome(sp, "Sponsors & Partners");
+    add(sp);
+  });
 })();

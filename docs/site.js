@@ -103,7 +103,10 @@
   const sp = E("section"); sp.id = "sponsors";
   sp.appendChild(E("h2", "sec", "Sponsors & Partners"));
   const grid = E("div", "sponsors");
-  D.sponsors.forEach(s => grid.appendChild(E("div", "card", `<img src="${s.img}" alt="${esc(s.name)}">`)));
+  D.sponsors.forEach(s => {
+    const img = `<img src="${s.img}" alt="${esc(s.name)}">`;
+    grid.appendChild(E("div", "card", s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${img}</a>` : img));
+  });
   sp.appendChild(grid);
   sp.appendChild(E("div", "spon-note", esc(D.sponsorNote)));
   main.appendChild(sp);
