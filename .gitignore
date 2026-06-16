@@ -1,0 +1,18 @@
+# --- Internal / sensitive: never publish ---
+*.xlsx
+~$*
+*.rtf
+Sponsor Logos*.zip
+build_programme.py
+_logos/
+.claude/
+
+# Root-level PDFs (the published one lives in docs/)
+/*.pdf
+
+# Root-level source images (already copied into docs/img/)
+/*.png
+
+# OS junk
+.DS_Store
+**/.DS_Store

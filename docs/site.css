@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;900&display=swap');
+
+:root{
+  --purple:#440099; --purple-d:#33007A; --lilac:#D0BFE5; --lilac-t:#EFE9F7;
+  --sky:#9ADBE8; --ink:#1F2330; --grey:#6B6E78; --line:#E4DEF0;
+}
+*{ box-sizing:border-box; margin:0; padding:0; }
+html, body{ overflow-x:hidden; }
+body{ font-family:'Source Sans 3', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color:var(--ink); line-height:1.5; background:#fff; -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word; }
+img{ max-width:100%; }
+a{ color:var(--purple); }
+
+/* ---- hero ---- */
+.hero{ text-align:center; padding:34px 20px 18px; }
+.hero .logo{ width:250px; max-width:66%; }
+.hero .sub{ color:var(--purple); font-weight:700; font-size:1.15rem; margin-top:6px; }
+.hero .rule{ width:64px; height:4px; background:var(--sky); border-radius:2px; margin:14px auto; }
+.hero .date{ color:var(--purple); font-weight:900; font-size:1.9rem; }
+.hero .host{ margin-top:16px; }
+.hero .host img{ height:44px; }
+.hero .dl{ display:inline-block; margin-top:18px; background:var(--purple); color:#fff;
+  text-decoration:none; font-weight:700; font-size:1rem; padding:11px 22px; border-radius:8px; }
+.hero .dl:hover{ background:var(--purple-d); }
+
+/* ---- sticky nav ---- */
+nav.topnav{ position:sticky; top:0; z-index:20; background:var(--purple);
+  display:flex; flex-wrap:wrap; justify-content:center; gap:2px; padding:6px;
+  box-shadow:0 2px 8px rgba(0,0,0,.12); }
+nav.topnav a{ color:#fff; text-decoration:none; font-weight:700; font-size:.95rem;
+  padding:8px 15px; border-radius:6px; }
+nav.topnav a:hover{ background:rgba(255,255,255,.16); }
+
+/* ---- layout ---- */
+main{ max-width:880px; margin:0 auto; padding:0 20px 50px; }
+section{ padding-top:38px; scroll-margin-top:58px; }
+h2.sec{ color:var(--purple); font-size:1.6rem; font-weight:700; margin-bottom:8px;
+  padding-bottom:6px; border-bottom:2px solid var(--lilac); }
+.welcome p{ margin:10px 0; }
+
+/* ---- schedule ---- */
+.tabs{ display:flex; gap:6px; margin:16px 0 2px; border-bottom:2px solid var(--lilac); }
+.tab{ font:inherit; font-weight:700; background:none; border:0; cursor:pointer;
+  padding:10px 18px; color:var(--ink); border-bottom:3px solid transparent; margin-bottom:-2px; }
+.tab:hover{ color:var(--purple); }
+.tab[aria-selected="true"]{ color:var(--purple); border-bottom-color:var(--purple); }
+.panel[hidden]{ display:none; }
+
+.venue{ color:var(--purple); font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+  font-size:.8rem; margin-top:20px; padding-bottom:5px; border-bottom:1px solid var(--purple); }
+.row{ display:grid; grid-template-columns:112px 1fr; gap:12px; padding:10px 0;
+  border-bottom:1px solid var(--line); }
+.row .time{ color:var(--purple); font-weight:700; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.row .ev{ color:var(--purple); }
+.row .ev.key{ font-weight:700; }
+.row .spon{ display:block; color:var(--grey); font-style:italic; font-size:.85rem; }
+.row .slabel{ color:var(--purple); font-weight:700; margin-bottom:4px; }
+.talk{ margin:7px 0; }
+.talk .who{ color:var(--purple); font-weight:700; }
+.talk .who .uni{ font-weight:400; }
+.talk .tt{ color:var(--ink); }
+
+/* ---- keynotes ---- */
+.keynote{ margin:20px 0; }
+.keynote .klabel{ color:var(--purple); font-weight:700; font-size:.78rem; letter-spacing:.1em;
+  text-transform:uppercase; }
+.keynote h3{ color:var(--purple); font-size:1.25rem; margin:2px 0; }
+.keynote .aff{ font-style:italic; color:var(--ink); margin-bottom:6px; }
+.keynote p{ color:var(--ink); }
+
+/* ---- posters ---- */
+.poster{ margin:13px 0; }
+.poster .who{ color:var(--purple); font-weight:700; }
+.poster .who .uni{ font-weight:400; }
+.poster .tt{ color:var(--ink); }
+
+/* ---- sponsors ---- */
+.sponsors{ display:flex; flex-wrap:wrap; gap:16px; margin-top:16px; }
+.sponsors .card{ flex:1 1 240px; border:1px solid var(--line); border-radius:8px;
+  height:132px; display:flex; align-items:center; justify-content:center; padding:18px; }
+.sponsors .card img{ max-height:82px; max-width:82%; object-fit:contain; }
+.spon-note{ color:var(--grey); font-style:italic; font-size:.9rem; margin-top:16px; text-align:center; }
+
+/* ---- footer ---- */
+footer{ background:var(--purple); color:#fff; text-align:center; padding:22px 20px; margin-top:44px; }
+footer .date{ color:var(--lilac); }
+footer .dl-foot{ margin-top:10px; }
+footer .dl-foot a{ color:#fff; font-weight:700; }
+
+@media (max-width:560px){
+  .hero .sub{ font-size:1rem; }
+  .hero .date{ font-size:1.45rem; }
+  nav.topnav{ gap:0; }
+  nav.topnav a{ padding:8px 10px; font-size:.9rem; }
+  .row{ grid-template-columns:1fr; gap:2px; }
+  .row .time{ font-size:.95rem; }
+}
