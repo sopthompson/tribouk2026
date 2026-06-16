@@ -501,7 +501,7 @@ window.DATA = {
     {
       "img": "img/Jost_Foundation_only_for_brochure.png",
       "name": "The Jost Foundation",
-      "url": "https://www.jostfoundation.org"
+      "url": "https://jostfoundation.org.uk"
     }
   ],
   "sponsorNote": "In partnership with the Royal Society of Chemistry journals: Materials Advances, Materials Horizons & Lubrication Frontiers."

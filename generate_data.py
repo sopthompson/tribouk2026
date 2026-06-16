@@ -192,7 +192,7 @@ DATA = {
    {"img":"img/Mechanical-Engineers-Logo-HR.png", "name":"Institution of Mechanical Engineers", "url":"https://www.imeche.org"},
    {"img":"img/IOP_logo.png", "name":"Institute of Physics", "url":"https://www.iop.org"},
    {"img":"img/RSC-brand-guidelines-2019_tcm18-246471.png", "name":"Royal Society of Chemistry", "url":"https://www.rsc.org"},
-   {"img":"img/Jost_Foundation_only_for_brochure.png", "name":"The Jost Foundation", "url":"https://www.jostfoundation.org"},
+   {"img":"img/Jost_Foundation_only_for_brochure.png", "name":"The Jost Foundation", "url":"https://jostfoundation.org.uk"},
  ],
  "sponsorNote": "In partnership with the Royal Society of Chemistry journals: Materials Advances, Materials Horizons & Lubrication Frontiers.",
 }
