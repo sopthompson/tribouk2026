@@ -75,6 +75,8 @@ TITLE_CANON = {
    "Probabilistic distribution of ball-raceway contact force and contact pressure in the blade pitch bearing of the IWT7.5 reference wind turbine",
  "Development of PFAS-Free Ionic Liquid Greases for Tribological Applications":
    "Development of PFAS-free ionic liquid greases for tribological applications",
+ "How to replenish lubricant in an oscillating wind turbine blade bearing raceway?":
+   "How to replenish lubricant in an oscillating wind turbine blade bearing raceway",
 }
 def fix_title(s):
     t = clean(s)

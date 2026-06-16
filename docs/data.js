@@ -409,7 +409,7 @@ window.DATA = {
       {
         "name": "Alvaro Barrueto",
         "uni": "University of Sheffield",
-        "title": "How to replenish lubricant in an oscillating wind turbine blade bearing raceway?"
+        "title": "How to replenish lubricant in an oscillating wind turbine blade bearing raceway"
       },
       {
         "name": "Chenxi Wang",
