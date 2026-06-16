@@ -20,6 +20,3 @@ Website **and** print PDF for the TriboUK 2026 Postgraduate Tribology Conference
 1. Edit `docs/data.js` (or re-run `python3 generate_data.py` after updating the spreadsheet).
 2. Rebuild the PDF: `python3 build.py`.
 3. Commit and push — GitHub Pages redeploys automatically.
-
-> The source spreadsheets contain personal data (submitter emails) and internal notes,
-> so they are deliberately excluded from this repository — see `.gitignore`.
