@@ -504,5 +504,5 @@ window.DATA = {
       "url": "https://jostfoundation.org.uk"
     }
   ],
-  "sponsorNote": "In partnership with the Royal Society of Chemistry journals: Materials Advances, Materials Horizons & Lubrication Frontiers."
+  "sponsorNote": ""
 };

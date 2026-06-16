@@ -108,7 +108,7 @@
     grid.appendChild(E("div", "card", s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${img}</a>` : img));
   });
   sp.appendChild(grid);
-  sp.appendChild(E("div", "spon-note", esc(D.sponsorNote)));
+  if (D.sponsorNote) sp.appendChild(E("div", "spon-note", esc(D.sponsorNote)));
   main.appendChild(sp);
 
   /* footer */

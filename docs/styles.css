@@ -119,11 +119,10 @@ p.copy{ font-size:10.5pt; margin-bottom:3.5mm; text-align:justify; }
 .poster-list .ptitle{ color:var(--ink); font-size:10pt; line-height:1.25; }
 
 /* ===== SPONSORS ===== */
-.sponsor-band{ border:.4mm solid var(--line); border-left:3.5mm solid var(--lilac);
-  border-radius:3mm; height:54mm; display:flex; align-items:center; justify-content:center;
-  margin-bottom:7mm; break-inside:avoid; }
+.sponsor-band{ height:54mm; display:flex; align-items:center; justify-content:center;
+  margin-bottom:4mm; break-inside:avoid; }
 .sponsor-band a{ display:flex; align-items:center; justify-content:center; width:100%; height:100%; }
-.sponsor-band img{ max-height:60%; max-width:62%; object-fit:contain; }
+.sponsor-band img{ max-height:84%; max-width:76%; object-fit:contain; }
 .sponsor-note{ color:var(--grey); font-style:italic; font-size:9pt; text-align:center; margin-top:2mm; }
 
 /* ===== SCREEN-ONLY PREVIEW CHROME (never in the built PDF) ===== */

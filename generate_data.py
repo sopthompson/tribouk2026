@@ -194,7 +194,7 @@ DATA = {
    {"img":"img/RSC-brand-guidelines-2019_tcm18-246471.png", "name":"Royal Society of Chemistry", "url":"https://www.rsc.org"},
    {"img":"img/Jost_Foundation_only_for_brochure.png", "name":"The Jost Foundation", "url":"https://jostfoundation.org.uk"},
  ],
- "sponsorNote": "In partnership with the Royal Society of Chemistry journals: Materials Advances, Materials Horizons & Lubrication Frontiers.",
+ "sponsorNote": "",
 }
 
 with open(os.path.join(HERE, "docs", "data.js"), "w") as f:

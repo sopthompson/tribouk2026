@@ -119,11 +119,10 @@
     if (gi === 0) {
       sp.appendChild(E("h1", "title", "Our Sponsors &amp; Partners"));
       sp.appendChild(E("p", "copy",
-        "TriboUK 2026 is made possible through the generous support of our sponsors and partners. "
-        + "We are grateful for their commitment to the tribology community and to early-career researchers."));
+        "TriboUK 2026 is made possible through the generous support of our sponsors and partners."));
     }
     group.forEach(s => sp.appendChild(band(s)));
-    if (gi === groups.length - 1) sp.appendChild(E("div", "sponsor-note", esc(D.sponsorNote)));
+    if (gi === groups.length - 1 && D.sponsorNote) sp.appendChild(E("div", "sponsor-note", esc(D.sponsorNote)));
     chrome(sp, "Sponsors & Partners");
     add(sp);
   });
