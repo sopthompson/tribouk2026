@@ -50,7 +50,12 @@
   D.days.forEach((day, i) => {
     const panel = E("div", "panel"); panel.hidden = i !== 0;
     day.rows.forEach(r => {
-      if (r.kind === "venue") { panel.appendChild(E("div", "venue", esc(r.label))); return; }
+      if (r.kind === "venue") {
+        const vl = E("div", "venue", esc(r.label));
+        if (r.map) vl.innerHTML += ` <a class="vmap" href="${esc(r.map)}" target="_blank" rel="noopener">map</a>`;
+        panel.appendChild(vl);
+        return;
+      }
       const row = E("div", "row");
       row.appendChild(E("div", "time", esc(r.time)));
       const c = E("div");

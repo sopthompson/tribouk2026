@@ -49,7 +49,9 @@
     s.appendChild(E("div", "dayhead", esc(day.label.toUpperCase())));
     day.rows.forEach(r => {
       if (r.kind === "venue") {
-        s.appendChild(E("div", "venue-label", esc(r.label)));
+        const vl = E("div", "venue-label", esc(r.label));
+        if (r.map) vl.innerHTML += ` <a class="vmap" href="${esc(r.map)}">map</a>`;
+        s.appendChild(vl);
         return;
       }
       const row = E("div", "row " + (r.kind === "keynote" ? "key" : r.kind === "break" ? "brk" : r.kind === "session" ? "sess" : "item"));

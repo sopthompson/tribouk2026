@@ -49,6 +49,7 @@ h2.sec{ color:var(--purple); font-size:1.6rem; font-weight:700; margin-bottom:8p
 
 .venue{ color:var(--purple); font-weight:700; letter-spacing:.1em; text-transform:uppercase;
   font-size:.8rem; margin-top:20px; padding-bottom:5px; border-bottom:1px solid var(--purple); }
+.venue .vmap{ font-weight:400; font-size:.8rem; letter-spacing:0; text-transform:none; color:var(--grey); }
 .row{ display:grid; grid-template-columns:112px 1fr; gap:12px; padding:10px 0;
   border-bottom:1px solid var(--line); }
 .row .time{ color:var(--purple); font-weight:700; font-variant-numeric:tabular-nums; white-space:nowrap; }

@@ -50,6 +50,8 @@ p.copy{ font-size:10.5pt; margin-bottom:3.5mm; text-align:justify; }
 .venue-label{ color:var(--purple); font-weight:700; font-size:9pt; letter-spacing:.14em;
   text-transform:uppercase; padding:1.6mm 0 .8mm; margin-top:.3mm;
   border-bottom:.9mm solid var(--purple); break-after:avoid; }
+.venue-label .vmap{ font-weight:400; font-size:8pt; letter-spacing:0; text-transform:none;
+  color:var(--grey); text-decoration:none; }
 
 .row{ display:grid; grid-template-columns:26mm 1fr; border-bottom:.4mm solid var(--line);
   break-inside:avoid; }
