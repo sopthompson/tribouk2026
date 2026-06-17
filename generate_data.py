@@ -187,10 +187,10 @@ DATA = {
  "days": days,
  "abstracts": {"oral": oral, "poster": poster},
  "voting": {
-   "intro": "Help choose the winners — scan a QR code to cast your vote. Voting closes during the final coffee break on Day 2.",
+   "intro": "Help choose the winners — scan a QR code, or tap the link below it, to cast your vote. Voting closes during the final coffee break on Day 2.",
    "items": [
-     {"label": "Best Oral Presentation", "img": "img/QR_oral_vote.png"},
-     {"label": "Best Poster", "img": "img/QR_poster_vote.png"},
+     {"label": "Best Oral Presentation", "img": "img/QR_oral_vote.png", "url": "https://app.sli.do/event/eBHkSJe7jNZ1QErF9TcL4G"},
+     {"label": "Best Poster", "img": "img/QR_poster_vote.png", "url": "https://app.sli.do/event/rLLnTMWEwXeBK1ZPvdBh9s"},
    ],
  },
  "sponsors": [

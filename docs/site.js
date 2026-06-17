@@ -107,8 +107,10 @@
   const vgrid = E("div", "votes");
   D.voting.items.forEach(v => {
     const card = E("div", "vote");
-    card.innerHTML = `<img src="${v.img}" alt="${esc(v.label)} voting QR code">`
-      + `<div class="vlabel">${esc(v.label)}</div>`;
+    const qr = `<img src="${v.img}" alt="${esc(v.label)} voting QR code">`;
+    card.innerHTML = (v.url ? `<a href="${esc(v.url)}" target="_blank" rel="noopener">${qr}</a>` : qr)
+      + `<div class="vlabel">${esc(v.label)}</div>`
+      + (v.url ? `<a class="vbtn" href="${esc(v.url)}" target="_blank" rel="noopener">Vote &rarr;</a>` : "");
     vgrid.appendChild(card);
   });
   vt.appendChild(vgrid);

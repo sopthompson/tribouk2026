@@ -113,7 +113,10 @@
   const vgrid = E("div", "votes");
   D.voting.items.forEach(v => {
     const card = E("div", "vote");
-    card.innerHTML = `<img src="${v.img}" alt=""><div class="vlabel">${esc(v.label)}</div>`;
+    const qr = `<img src="${v.img}" alt="">`;
+    card.innerHTML = (v.url ? `<a href="${esc(v.url)}">${qr}</a>` : qr)
+      + `<div class="vlabel">${esc(v.label)}</div>`
+      + (v.url ? `<a class="vbtn" href="${esc(v.url)}">Vote &rarr;</a>` : "");
     vgrid.appendChild(card);
   });
   vt.appendChild(vgrid);

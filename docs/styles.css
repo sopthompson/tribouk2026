@@ -116,6 +116,8 @@ p.copy{ font-size:10.5pt; margin-bottom:3.5mm; text-align:justify; }
 .vote{ text-align:center; }
 .vote img{ width:62mm; height:62mm; }
 .vote .vlabel{ color:var(--purple); font-weight:700; font-size:12pt; margin-top:5mm; }
+.vote .vbtn{ display:inline-block; margin-top:3mm; color:var(--purple); font-weight:700;
+  font-size:11pt; text-decoration:none; border-bottom:.5mm solid var(--purple); }
 
 /* ===== POSTER PRESENTATIONS (list) ===== */
 .poster-list{ list-style:none; }
