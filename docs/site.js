@@ -110,7 +110,7 @@
     const qr = `<img src="${v.img}" alt="${esc(v.label)} voting QR code">`;
     card.innerHTML = (v.url ? `<a href="${esc(v.url)}" target="_blank" rel="noopener">${qr}</a>` : qr)
       + `<div class="vlabel">${esc(v.label)}</div>`
-      + (v.url ? `<a class="vbtn" href="${esc(v.url)}" target="_blank" rel="noopener">Vote &rarr;</a>` : "");
+      + (v.url ? `<a class="vbtn" href="${esc(v.url)}" target="_blank" rel="noopener">Vote</a>` : "");
     vgrid.appendChild(card);
   });
   vt.appendChild(vgrid);

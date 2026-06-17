@@ -459,7 +459,7 @@ window.DATA = {
     ]
   },
   "voting": {
-    "intro": "Help choose the winners — scan a QR code, or tap the link below it, to cast your vote. Voting closes during the final coffee break on Day 2.",
+    "intro": "Scan the QR codes or tap the link below to choose your favourites. Voting closes during the final coffee break on Day 2.",
     "items": [
       {
         "label": "Best Oral Presentation",

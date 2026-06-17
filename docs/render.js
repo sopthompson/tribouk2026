@@ -116,7 +116,7 @@
     const qr = `<img src="${v.img}" alt="">`;
     card.innerHTML = (v.url ? `<a href="${esc(v.url)}">${qr}</a>` : qr)
       + `<div class="vlabel">${esc(v.label)}</div>`
-      + (v.url ? `<a class="vbtn" href="${esc(v.url)}">Vote &rarr;</a>` : "");
+      + (v.url ? `<a class="vbtn" href="${esc(v.url)}">Vote</a>` : "");
     vgrid.appendChild(card);
   });
   vt.appendChild(vgrid);
