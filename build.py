@@ -46,6 +46,7 @@ SECTION_ANCHORS = [
     ("DAY 2",                "Programme"),
     ("Keynote Speakers",     "Keynote Speakers"),
     ("Poster Presentations", "Poster Presentations"),
+    ("Voting",               "Voting"),
     ("Our Sponsors",         "Sponsors & Partners"),
 ]
 

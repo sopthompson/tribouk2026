@@ -106,6 +106,20 @@
   chrome(ps, "Poster Presentations");
   add(ps);
 
+  /* ---------- VOTING ---------- */
+  const vt = E("section", "sheet page-break");
+  vt.appendChild(E("h1", "title", "Voting"));
+  if (D.voting.intro) vt.appendChild(E("p", "copy", esc(D.voting.intro)));
+  const vgrid = E("div", "votes");
+  D.voting.items.forEach(v => {
+    const card = E("div", "vote");
+    card.innerHTML = `<img src="${v.img}" alt=""><div class="vlabel">${esc(v.label)}</div>`;
+    vgrid.appendChild(card);
+  });
+  vt.appendChild(vgrid);
+  chrome(vt, "Voting");
+  add(vt);
+
   /* ---------- SPONSORS (3 bands per page) ---------- */
   const band = (s) => {
     const b = E("div", "sponsor-band");

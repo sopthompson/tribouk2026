@@ -19,7 +19,7 @@
   /* sticky nav */
   const nav = E("nav", "topnav");
   nav.innerHTML = `<a href="#schedule">Schedule</a><a href="#keynotes">Keynotes</a>`
-    + `<a href="#posters">Posters</a><a href="#sponsors">Sponsors</a>`;
+    + `<a href="#posters">Posters</a><a href="#voting">Voting</a><a href="#sponsors">Sponsors</a>`;
   app.appendChild(nav);
 
   const main = E("main");
@@ -99,6 +99,20 @@
     ps.appendChild(d);
   });
   main.appendChild(ps);
+
+  /* voting */
+  const vt = E("section"); vt.id = "voting";
+  vt.appendChild(E("h2", "sec", "Voting"));
+  if (D.voting.intro) vt.appendChild(E("p", null, esc(D.voting.intro)));
+  const vgrid = E("div", "votes");
+  D.voting.items.forEach(v => {
+    const card = E("div", "vote");
+    card.innerHTML = `<img src="${v.img}" alt="${esc(v.label)} voting QR code">`
+      + `<div class="vlabel">${esc(v.label)}</div>`;
+    vgrid.appendChild(card);
+  });
+  vt.appendChild(vgrid);
+  main.appendChild(vt);
 
   /* sponsors */
   const sp = E("section"); sp.id = "sponsors";

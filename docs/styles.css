@@ -111,6 +111,12 @@ p.copy{ font-size:10.5pt; margin-bottom:3.5mm; text-align:justify; }
 .section-h{ color:var(--purple); font-weight:700; font-size:13pt; margin-bottom:5mm;
   column-span:all; }
 
+/* ===== VOTING ===== */
+.votes{ display:flex; justify-content:center; gap:20mm; margin-top:16mm; }
+.vote{ text-align:center; }
+.vote img{ width:62mm; height:62mm; }
+.vote .vlabel{ color:var(--purple); font-weight:700; font-size:12pt; margin-top:5mm; }
+
 /* ===== POSTER PRESENTATIONS (list) ===== */
 .poster-list{ list-style:none; }
 .poster-list li{ margin-bottom:4mm; break-inside:avoid; }
