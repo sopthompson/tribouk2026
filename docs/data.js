@@ -14,25 +14,29 @@ window.DATA = {
       "label": "Keynote 1",
       "name": "Eladio Hurtado Molina",
       "affil": "Lead Engineer, Blade Bearings — Vestas",
+      "photo": "img/keynote_eladio.jpg",
       "bio": "Eladio Hurtado Molina is a leading expert in wind turbine component reliability, currently serving as Lead Engineer for Blade Bearings at Vestas. After earning his PhD from the University of Sheffield in 2022, he successfully transitioned from small-scale wear research to validating components for the world's largest multi-MW wind turbines. Today, he continues to bridge the gap between industry and academia by managing a strategic collaboration between Vestas and the University of Sheffield."
     },
     {
       "label": "Keynote 2",
       "name": "Leon Proud",
       "affil": "Advanced Manufacturing Research Centre (AMRC)",
+      "photo": "",
       "bio": ""
     },
     {
       "label": "Keynote 3",
       "name": "Roger Lewis",
       "affil": "Professor of Mechanical Engineering, University of Sheffield",
+      "photo": "img/keynote_lewis.jpg",
       "bio": "Professor Roger Lewis is a Royal Academy of Engineering Research Chair in the Department of Mechanical Engineering at the University of Sheffield, where he has been an academic since 2002. His research spans industrial wear problems, the development of novel ultrasonic techniques for machine element contact analysis, and the design of engineering components and machines. His work covers wheel/rail contact tribology, friction management, condition monitoring, and the tribology of human interactions including skin friction, hand/object contact, and pedestrian slips. He has been recognised by the Tribology Trust Bronze Medal (2001), a Royal Society Brian Mercer Award for Innovation (2003), the Institute of Physics Innovation in Tribology Prize (2008), and the Donald Julius Groen Prize in Tribology (2020)."
     },
     {
       "label": "Keynote 4",
       "name": "Klaus-Dieter Meck",
       "affil": "Innovation Director, Core Technology & Simulation — John Crane",
-      "bio": "Klaus-Dieter Meck is the Innovation Director for Core Technology & Simulation at John Crane. Mr Meck has over 32 years of experience in sealing technology and rotating equipment. He is also a named inventor on patents related to mechanical seals, power transmission couplings, and condition monitoring. Mr Meck has recently been appointed as a Visiting Professor to the School of Mechanical, Aerospace & Civil Engineering at the University of Sheffield."
+      "photo": "img/keynote_meck.jpg",
+      "bio": "Klaus-D. Meck is the Innovation Director — Core Technology & Simulation at John Crane, a division of Smiths Group plc, a global manufacturer and service provider for mechanical seals and supporting equipment. Mr Meck has over 30 years of experience in sealing technology and rotating equipment, with roles in R&D and Application Engineering. He received his master's degree from the University of Stuttgart, Germany and is the author of several papers related to rotating equipment and critical components. He is named inventor on several patents related to mechanical seals, power transmission couplings, and condition monitoring. Mr Meck has recently been appointed as Visiting Professor to the School of Mechanical, Aerospace & Civil Engineering at the University of Sheffield."
     }
   ],
   "days": [

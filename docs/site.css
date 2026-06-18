@@ -65,7 +65,12 @@ h2.sec{ color:var(--purple); font-size:1.6rem; font-weight:700; margin-bottom:8p
 .talk .tt{ color:var(--ink); }
 
 /* ---- keynotes ---- */
-.keynote{ margin:20px 0; }
+.keynote{ margin:22px 0; display:flex; gap:18px; align-items:flex-start; }
+.keynote .kphoto{ width:100px; height:100px; flex:none; border-radius:50%; object-fit:cover;
+  object-position:top; border:3px solid var(--lilac); background:var(--lilac-t); }
+.keynote .kphoto-ph{ display:flex; align-items:center; justify-content:center;
+  color:var(--purple); font-weight:700; font-size:1.7rem; text-transform:uppercase; }
+.keynote .kbody{ flex:1; min-width:0; }
 .keynote .klabel{ color:var(--purple); font-weight:700; font-size:.78rem; letter-spacing:.1em;
   text-transform:uppercase; }
 .keynote h3{ color:var(--purple); font-size:1.25rem; margin:2px 0; }
@@ -109,4 +114,6 @@ footer .dl-foot a{ color:#fff; font-weight:700; }
   nav.topnav a{ padding:8px 10px; font-size:.9rem; }
   .row{ grid-template-columns:1fr; gap:2px; }
   .row .time{ font-size:.95rem; }
+  .keynote{ gap:14px; }
+  .keynote .kphoto{ width:72px; height:72px; }
 }

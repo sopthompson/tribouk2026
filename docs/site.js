@@ -85,11 +85,15 @@
   /* keynotes */
   const ks = E("section"); ks.id = "keynotes";
   ks.appendChild(E("h2", "sec", "Keynote Speakers"));
+  const initials = (n) => { const p = (n || "").trim().split(/\s+/); return ((p[0] || "")[0] || "") + ((p[p.length - 1] || "")[0] || ""); };
   D.keynotes.forEach(k => {
     const d = E("div", "keynote");
-    d.innerHTML = `<div class="klabel">${esc(k.label)}</div><h3>${esc(k.name)}</h3>`
+    const photo = k.photo
+      ? `<img class="kphoto" src="${esc(k.photo)}" alt="${esc(k.name)}">`
+      : `<div class="kphoto kphoto-ph">${esc(initials(k.name))}</div>`;
+    d.innerHTML = photo + `<div class="kbody"><div class="klabel">${esc(k.label)}</div><h3>${esc(k.name)}</h3>`
       + (k.affil ? `<div class="aff">${esc(k.affil)}</div>` : "")
-      + (k.bio ? `<p>${esc(k.bio)}</p>` : "");
+      + (k.bio ? `<p>${esc(k.bio)}</p>` : "") + `</div>`;
     ks.appendChild(d);
   });
   main.appendChild(ks);

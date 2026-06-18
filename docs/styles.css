@@ -93,7 +93,12 @@ p.copy{ font-size:10.5pt; margin-bottom:3.5mm; text-align:justify; }
 .cover-mark{ display:block; width:44mm; margin:9mm auto 0; }
 
 /* ===== KEYNOTE SPEAKERS ===== */
-.keynote{ break-inside:avoid; margin-bottom:7mm; }
+.keynote{ break-inside:avoid; margin-bottom:7mm; display:flex; gap:6mm; align-items:flex-start; }
+.keynote .kphoto{ width:30mm; height:30mm; flex:none; border-radius:50%; object-fit:cover;
+  object-position:top; border:.8mm solid var(--lilac); background:var(--lilac-t); }
+.keynote .kphoto-ph{ display:flex; align-items:center; justify-content:center;
+  color:var(--purple); font-weight:700; font-size:15pt; text-transform:uppercase; }
+.keynote .kbody{ flex:1; min-width:0; }
 .keynote .klabel{ color:var(--purple); font-weight:700; font-size:8.5pt; letter-spacing:.14em;
   text-transform:uppercase; margin-bottom:1mm; }
 .keynote h3{ color:var(--purple); font-size:14pt; margin-bottom:1mm; }
