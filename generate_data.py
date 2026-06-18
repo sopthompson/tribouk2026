@@ -111,9 +111,9 @@ def session(code):
     return [dict(time=t, name=n, uni=uni(n), title=ttl(n)) for (t, n) in SESSIONS[code]]
 
 VENUE_MAPS = {
- "Mappin Hall": "https://www.google.com/maps/search/?api=1&query=Sir+Frederick+Mappin+Building+Mappin+Street+Sheffield+S1+3JD",
- "AMRC":        "https://www.google.com/maps/search/?api=1&query=AMRC+Knowledge+Transfer+Centre+Wallis+Way+Catcliffe+Rotherham+S60+5TZ",
- "Guyshi":      "https://www.google.com/maps/search/?api=1&query=Guyshi+180+West+Street+Sheffield+S1+4ET",
+ "Mappin Hall": "https://maps.app.goo.gl/CkdEHVfv9mitN4pJ7",
+ "AMRC":        "https://maps.app.goo.gl/WBT7CQsHMQJfFZ846",
+ "Guyshi":      "https://maps.app.goo.gl/sjytt6beGNBByQDw6",
 }
 def row(kind, time, label, who=None, sponsor=None, code=None, bold=False):
     r = dict(kind=kind, time=time, label=label)

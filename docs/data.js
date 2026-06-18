@@ -47,7 +47,7 @@ window.DATA = {
           "kind": "venue",
           "time": "",
           "label": "Mappin Hall",
-          "map": "https://www.google.com/maps/search/?api=1&query=Sir+Frederick+Mappin+Building+Mappin+Street+Sheffield+S1+3JD"
+          "map": "https://maps.app.goo.gl/CkdEHVfv9mitN4pJ7"
         },
         {
           "kind": "break",
@@ -130,7 +130,7 @@ window.DATA = {
           "kind": "venue",
           "time": "",
           "label": "AMRC",
-          "map": "https://www.google.com/maps/search/?api=1&query=AMRC+Knowledge+Transfer+Centre+Wallis+Way+Catcliffe+Rotherham+S60+5TZ"
+          "map": "https://maps.app.goo.gl/WBT7CQsHMQJfFZ846"
         },
         {
           "kind": "break",
@@ -168,7 +168,7 @@ window.DATA = {
           "kind": "venue",
           "time": "",
           "label": "Mappin Hall",
-          "map": "https://www.google.com/maps/search/?api=1&query=Sir+Frederick+Mappin+Building+Mappin+Street+Sheffield+S1+3JD"
+          "map": "https://maps.app.goo.gl/CkdEHVfv9mitN4pJ7"
         },
         {
           "kind": "break",
@@ -180,7 +180,7 @@ window.DATA = {
           "kind": "venue",
           "time": "",
           "label": "Guyshi",
-          "map": "https://www.google.com/maps/search/?api=1&query=Guyshi+180+West+Street+Sheffield+S1+4ET"
+          "map": "https://maps.app.goo.gl/sjytt6beGNBByQDw6"
         },
         {
           "kind": "break",
@@ -196,7 +196,7 @@ window.DATA = {
           "kind": "venue",
           "time": "",
           "label": "Mappin Hall",
-          "map": "https://www.google.com/maps/search/?api=1&query=Sir+Frederick+Mappin+Building+Mappin+Street+Sheffield+S1+3JD"
+          "map": "https://maps.app.goo.gl/CkdEHVfv9mitN4pJ7"
         },
         {
           "kind": "break",
