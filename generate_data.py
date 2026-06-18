@@ -138,7 +138,7 @@ days = [
    row("break", "13:10–13:50", "Lunch"),
    row("item",  "13:50–14:00", "Introduction to AMRC"),
    row("keynote","14:00–14:30","Keynote 2", who="Leon Proud"),
-   row("item",  "14:30–15:30", "Lab tours", bold=True),
+   row("item",  "14:30–15:30", "Guided laboratory tours", bold=True),
    row("item",  "15:30–15:55", "Networking & closing remarks"),
    row("break", "15:55–16:40", "Travel to University"),
    row("venue", "", "Mappin Hall"),

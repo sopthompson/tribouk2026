@@ -151,7 +151,7 @@ window.DATA = {
         {
           "kind": "item",
           "time": "14:30–15:30",
-          "label": "Lab tours",
+          "label": "Guided laboratory tours",
           "bold": true
         },
         {
