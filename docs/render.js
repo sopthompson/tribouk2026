@@ -35,13 +35,15 @@
     <div class="botbar lilac"></div><div class="botbar"></div>`;
   add(cover);
 
-  /* ---------- WELCOME ---------- */
-  const wel = E("section", "sheet page-break");
-  wel.appendChild(E("h1", "title", "Welcome to " + esc(D.conf.name)));
-  D.welcome.forEach((p, i) =>
-    wel.appendChild(E("p", i === 0 ? "lead" : "copy", esc(p))));
-  chrome(wel, "Welcome");
-  add(wel);
+  /* ---------- WELCOME (only if text has been supplied) ---------- */
+  if (D.welcome && D.welcome.length) {
+    const wel = E("section", "sheet page-break");
+    wel.appendChild(E("h1", "title", "Welcome to " + esc(D.conf.name)));
+    D.welcome.forEach((p, i) =>
+      wel.appendChild(E("p", i === 0 ? "lead" : "copy", esc(p))));
+    chrome(wel, "Welcome");
+    add(wel);
+  }
 
   /* ---------- SCHEDULE ---------- */
   D.days.forEach(day => {

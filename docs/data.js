@@ -6,9 +6,7 @@ window.DATA = {
     "host": "University of Sheffield",
     "date": "1–2 July 2026"
   },
-  "welcome": [
-    "[Placeholder — the welcome address from the TriboUK 2026 organising committee will be added here.]"
-  ],
+  "welcome": [],
   "keynotes": [
     {
       "label": "Keynote 1",

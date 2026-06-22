@@ -25,11 +25,13 @@
   const main = E("main");
   app.appendChild(main);
 
-  /* welcome */
-  const wel = E("section", "welcome"); wel.id = "welcome";
-  wel.appendChild(E("h2", "sec", "Welcome"));
-  D.welcome.forEach(p => wel.appendChild(E("p", null, esc(p))));
-  main.appendChild(wel);
+  /* welcome (only if text has been supplied) */
+  if (D.welcome && D.welcome.length) {
+    const wel = E("section", "welcome"); wel.id = "welcome";
+    wel.appendChild(E("h2", "sec", "Welcome"));
+    D.welcome.forEach(p => wel.appendChild(E("p", null, esc(p))));
+    main.appendChild(wel);
+  }
 
   /* schedule with day tabs */
   const sch = E("section"); sch.id = "schedule";
