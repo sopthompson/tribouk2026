@@ -472,6 +472,13 @@ window.DATA = {
         "keywords": "Composites; solid lubricants; silicon carbide; dry gas seals; spark plasma sintering"
       },
       {
+        "name": "Jaden Davies",
+        "uni": "University of Sheffield",
+        "title": "Ultrasonic measurement of lubricant film thickness in ball-raceway contacts of rolling element bearings",
+        "abstract": "",
+        "keywords": "Lubrication, Rolling Element Bearings, Ultrasound"
+      },
+      {
         "name": "MM Raihan",
         "uni": "University of Leeds",
         "title": "Real-time wear-corrosion measurement using eddy current and electrochemistry sensing",
