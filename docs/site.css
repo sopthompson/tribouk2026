@@ -58,7 +58,8 @@ h2.sec{ color:var(--purple); font-size:1.6rem; font-weight:700; margin-bottom:8p
 .row .ev{ color:var(--purple); }
 .row .ev.key{ font-weight:700; }
 .row .spon{ display:block; color:var(--grey); font-style:italic; font-size:.85rem; }
-.row .slabel{ color:var(--purple); font-weight:700; margin-bottom:4px; }
+.row .slabel{ color:var(--purple); font-weight:700; margin-bottom:2px; }
+.row .schair{ color:var(--grey); font-style:italic; font-size:.85rem; margin-bottom:6px; }
 .talk{ margin:7px 0; }
 .talk .who{ color:var(--purple); font-weight:700; }
 .talk .who .uni{ font-weight:400; }
@@ -76,6 +77,14 @@ h2.sec{ color:var(--purple); font-size:1.6rem; font-weight:700; margin-bottom:8p
 .keynote h3{ color:var(--purple); font-size:1.25rem; margin:2px 0; }
 .keynote .aff{ font-style:italic; color:var(--ink); margin-bottom:6px; }
 .keynote p{ color:var(--ink); }
+
+/* ---- abstracts (oral + poster, full text) ---- */
+.abs{ margin:22px 0; padding-bottom:18px; border-bottom:1px solid var(--line); }
+.abs:last-child{ border-bottom:0; }
+.abs h3{ color:var(--purple); font-size:1.18rem; line-height:1.28; margin-bottom:4px; }
+.abs .ameta{ color:var(--purple-d); font-style:italic; margin-bottom:8px; }
+.abs .ameta b{ font-style:normal; color:var(--purple); }
+.abs .apar{ margin:8px 0; }
 
 /* ---- posters ---- */
 .poster{ margin:13px 0; }

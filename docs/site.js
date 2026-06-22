@@ -18,8 +18,11 @@
 
   /* sticky nav */
   const nav = E("nav", "topnav");
-  nav.innerHTML = `<a href="#schedule">Schedule</a><a href="#keynotes">Keynotes</a>`
-    + `<a href="#posters">Posters</a><a href="#voting">Voting</a><a href="#sponsors">Sponsors</a>`;
+  let navHtml = `<a href="#schedule">Schedule</a><a href="#keynotes">Keynotes</a>`
+    + `<a href="#presentations">Presentations</a><a href="#posters">Posters</a>`
+    + `<a href="#voting">Voting</a><a href="#sponsors">Sponsors</a>`;
+  if (D.committee && D.committee.length) navHtml += `<a href="#committee">Committee</a>`;
+  nav.innerHTML = navHtml;
   app.appendChild(nav);
 
   const main = E("main");
@@ -35,7 +38,7 @@
 
   /* schedule with day tabs */
   const sch = E("section"); sch.id = "schedule";
-  sch.appendChild(E("h2", "sec", "Programme"));
+  sch.appendChild(E("h2", "sec", "Schedule"));
   const tabs = E("div", "tabs");
   const panels = [];
   D.days.forEach((day, i) => {
@@ -63,6 +66,7 @@
       const c = E("div");
       if (r.kind === "session") {
         c.appendChild(E("div", "slabel", esc(r.label)));
+        if (r.chair) c.appendChild(E("div", "schair", "Chair: " + esc(r.chair)));
         r.talks.forEach(tk => {
           const t = E("div", "talk");
           t.innerHTML = `<div class="who">${esc(tk.name)}${tk.uni ? ` <span class="uni">· ${esc(tk.uni)}</span>` : ""}</div>`
@@ -100,15 +104,26 @@
   });
   main.appendChild(ks);
 
-  /* posters */
+  /* shared abstract card: title, author · institution, then paragraphs */
+  const absParas = (txt) => (txt || "").split(/\n{2,}/).map(p => p.replace(/\n/g, " ").trim()).filter(Boolean);
+  const absCard = (a) => {
+    const d = E("div", "abs");
+    d.innerHTML = `<h3>${esc(a.title)}</h3>`
+      + `<div class="ameta"><b>${esc(a.name)}</b>${a.uni ? ` · ${esc(a.uni)}` : ""}</div>`;
+    absParas(a.abstract).forEach(p => d.appendChild(E("p", "apar", esc(p))));
+    return d;
+  };
+
+  /* oral presentation abstracts */
+  const pr = E("section"); pr.id = "presentations";
+  pr.appendChild(E("h2", "sec", "Oral Presentations"));
+  D.abstracts.oral.forEach(a => pr.appendChild(absCard(a)));
+  main.appendChild(pr);
+
+  /* posters (title + abstract) */
   const ps = E("section"); ps.id = "posters";
   ps.appendChild(E("h2", "sec", "Poster Presentations"));
-  D.abstracts.poster.forEach(a => {
-    const d = E("div", "poster");
-    d.innerHTML = `<div class="who">${esc(a.name)}${a.uni ? ` <span class="uni">· ${esc(a.uni)}</span>` : ""}</div>`
-      + `<div class="tt">${esc(a.title)}</div>`;
-    ps.appendChild(d);
-  });
+  D.abstracts.poster.forEach(a => ps.appendChild(absCard(a)));
   main.appendChild(ps);
 
   /* voting */
@@ -138,6 +153,24 @@
   sp.appendChild(grid);
   if (D.sponsorNote) sp.appendChild(E("div", "spon-note", esc(D.sponsorNote)));
   main.appendChild(sp);
+
+  /* organising committee (only if populated) */
+  if (D.committee && D.committee.length) {
+    const cm = E("section"); cm.id = "committee";
+    cm.appendChild(E("h2", "sec", "Organising Committee"));
+    cm.appendChild(E("p", null, "TriboUK 2026 is organised by the following team — feel free to approach any of us during the event."));
+    D.committee.forEach(m => {
+      const d = E("div", "keynote");
+      const ph = m.photo
+        ? `<img class="kphoto" src="${esc(m.photo)}" alt="${esc(m.name)}">`
+        : `<div class="kphoto kphoto-ph">${esc(initials(m.name))}</div>`;
+      d.innerHTML = ph + `<div class="kbody"><h3>${esc(m.name)}</h3>`
+        + (m.role ? `<div class="aff">${esc(m.role)}</div>` : "")
+        + (m.bio ? `<p>${esc(m.bio)}</p>` : "") + `</div>`;
+      cm.appendChild(d);
+    });
+    main.appendChild(cm);
+  }
 
   /* footer */
   const f = E("footer");

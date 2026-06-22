@@ -61,6 +61,7 @@
       const c = E("div", "c");
       if (r.kind === "session") {
         c.appendChild(E("div", "slabel", esc(r.label)));
+        if (r.chair) c.appendChild(E("div", "schair", "Chair: " + esc(r.chair)));
         r.talks.forEach(tk => {
           const tdiv = E("div", "talk");
           tdiv.innerHTML = `<div class="th">${esc(tk.name)}${tk.uni ? ` <span class="uni">· ${esc(tk.uni)}</span>` : ""}</div>
@@ -78,9 +79,19 @@
       row.appendChild(t); row.appendChild(c);
       s.appendChild(row);
     });
-    chrome(s, "Programme");
+    chrome(s, "Schedule");
     add(s);
   });
+
+  // shared abstract block: title, author · institution, then paragraphs
+  const absParas = (txt) => (txt || "").split(/\n{2,}/).map(p => p.replace(/\n/g, " ").trim()).filter(Boolean);
+  const absBlock = (a) => {
+    const d = E("div", "abs-item");
+    d.innerHTML = `<h3>${esc(a.title)}</h3>`
+      + `<div class="ameta"><b>${esc(a.name)}</b>${a.uni ? ` · ${esc(a.uni)}` : ""}</div>`;
+    absParas(a.abstract).forEach(p => d.appendChild(E("p", "apar", esc(p))));
+    return d;
+  };
 
   /* ---------- KEYNOTE SPEAKERS ---------- */
   const ks = E("section", "sheet page-break");
@@ -101,17 +112,19 @@
   chrome(ks, "Keynote Speakers");
   add(ks);
 
-  /* ---------- POSTER PRESENTATIONS (list) ---------- */
+  /* ---------- ORAL PRESENTATION ABSTRACTS ---------- */
+  const op = E("section", "sheet page-break");
+  op.appendChild(E("h1", "title", "Oral Presentations"));
+  op.appendChild(E("p", "copy", "Abstracts for the oral presentations, listed in running order."));
+  D.abstracts.oral.forEach(a => op.appendChild(absBlock(a)));
+  chrome(op, "Oral Presentations");
+  add(op);
+
+  /* ---------- POSTER PRESENTATION ABSTRACTS ---------- */
   const ps = E("section", "sheet page-break");
   ps.appendChild(E("h1", "title", "Poster Presentations"));
-  const ol = E("ul", "poster-list");
-  D.abstracts.poster.forEach(a => {
-    const li = document.createElement("li");
-    li.innerHTML = `<div class="pwho"><b>${esc(a.name)}</b>${a.uni ? ` <span class="uni">· ${esc(a.uni)}</span>` : ""}</div>
-      <div class="ptitle">${esc(a.title)}</div>`;
-    ol.appendChild(li);
-  });
-  ps.appendChild(ol);
+  ps.appendChild(E("p", "copy", "Abstracts for the poster presentations."));
+  D.abstracts.poster.forEach(a => ps.appendChild(absBlock(a)));
   chrome(ps, "Poster Presentations");
   add(ps);
 
@@ -153,4 +166,24 @@
     chrome(sp, "Sponsors & Partners");
     add(sp);
   });
+
+  /* ---------- ORGANISING COMMITTEE (only if populated) ---------- */
+  if (D.committee && D.committee.length) {
+    const cm = E("section", "sheet page-break");
+    cm.appendChild(E("h1", "title", "Organising Committee"));
+    cm.appendChild(E("p", "copy",
+      "TriboUK 2026 is organised by the following team — please feel free to approach any of us during the event."));
+    D.committee.forEach(m => {
+      const d = E("div", "committee");
+      const ph = m.photo
+        ? `<img class="cphoto" src="${esc(m.photo)}" alt="${esc(m.name)}">`
+        : `<div class="cphoto cphoto-ph">${esc(initials(m.name))}</div>`;
+      d.innerHTML = ph + `<div class="cbody"><h3>${esc(m.name)}</h3>`
+        + (m.role ? `<div class="crole">${esc(m.role)}</div>` : "")
+        + (m.bio ? `<p class="cbio">${esc(m.bio)}</p>` : "") + `</div>`;
+      cm.appendChild(d);
+    });
+    chrome(cm, "Organising Committee");
+    add(cm);
+  }
 })();

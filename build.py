@@ -42,12 +42,14 @@ def render_html(chrome):
 # carried forward onto that section's continuation pages
 SECTION_ANCHORS = [
     ("Welcome to TriboUK",   "Welcome"),
-    ("DAY 1",                "Programme"),
-    ("DAY 2",                "Programme"),
+    ("DAY 1",                "Schedule"),
+    ("DAY 2",                "Schedule"),
     ("Keynote Speakers",     "Keynote Speakers"),
+    ("Oral Presentations",   "Oral Presentations"),
     ("Poster Presentations", "Poster Presentations"),
     ("Voting",               "Voting"),
     ("Our Sponsors",         "Sponsors & Partners"),
+    ("Organising Committee", "Organising Committee"),
 ]
 
 def stamp(raw):

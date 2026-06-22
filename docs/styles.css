@@ -64,6 +64,7 @@ p.copy{ font-size:10.5pt; margin-bottom:3.5mm; text-align:justify; }
 .row .spon{ display:block; font-style:italic; font-size:8.5pt; color:var(--purple); margin-top:.4mm; }
 
 .row.sess .slabel{ color:var(--purple); font-weight:700; font-size:10.5pt; margin-bottom:.8mm; }
+.row.sess .schair{ color:var(--grey); font-style:italic; font-size:8.8pt; margin:-.4mm 0 1.2mm; }
 .talk{ margin-top:0.9mm; }
 .talk .th{ color:var(--purple); font-weight:700; font-size:9.3pt; }
 .talk .th .uni{ font-weight:400; }
@@ -105,7 +106,28 @@ p.copy{ font-size:10.5pt; margin-bottom:3.5mm; text-align:justify; }
 .keynote .kaffil{ color:var(--ink); font-style:italic; font-size:10pt; margin-bottom:2.5mm; }
 .keynote .kbio{ font-size:10pt; line-height:1.45; text-align:justify; }
 
-/* ===== ABSTRACTS ===== */
+/* ===== ABSTRACTS (oral + poster, full text) ===== */
+.abs-item{ margin-bottom:5.5mm; }
+.abs-item h3{ color:var(--purple); font-size:11.5pt; line-height:1.22; margin-bottom:.8mm;
+  break-after:avoid; }
+.abs-item .ameta{ color:var(--purple-d); font-style:italic; font-size:9.5pt; margin-bottom:1.6mm;
+  break-after:avoid; }
+.abs-item .ameta b{ font-style:normal; color:var(--purple); }
+.abs-item .apar{ font-size:9.5pt; line-height:1.4; text-align:justify; margin-bottom:1.6mm; }
+.abs-item .apar:last-child{ margin-bottom:0; }
+
+/* ===== ORGANISING COMMITTEE ===== */
+.committee{ break-inside:avoid; margin-bottom:6mm; display:flex; gap:6mm; align-items:flex-start; }
+.committee .cphoto{ width:24mm; height:24mm; flex:none; border-radius:50%; object-fit:cover;
+  object-position:top; border:.8mm solid var(--lilac); background:var(--lilac-t); }
+.committee .cphoto-ph{ display:flex; align-items:center; justify-content:center;
+  color:var(--purple); font-weight:700; font-size:12pt; text-transform:uppercase; }
+.committee .cbody{ flex:1; min-width:0; }
+.committee h3{ color:var(--purple); font-size:13pt; margin-bottom:.5mm; }
+.committee .crole{ color:var(--ink); font-style:italic; font-size:9.5pt; margin-bottom:1.5mm; }
+.committee .cbio{ font-size:9.5pt; line-height:1.42; text-align:justify; }
+
+/* ===== ABSTRACTS (legacy 2-col, unused) ===== */
 .abstracts{ columns:2; column-gap:8mm; column-fill:auto; }
 .abstract .apar{ margin-bottom:1.6mm; }
 .abstract .apar:last-child{ margin-bottom:0; }

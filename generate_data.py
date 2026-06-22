@@ -110,6 +110,16 @@ SESSIONS = {
 def session(code):
     return [dict(time=t, name=n, uni=uni(n), title=ttl(n)) for (t, n) in SESSIONS[code]]
 
+# Session chairs — fill in the display name for each session and re-run; the
+# chair appears under the session title on the schedule (blank = nothing shown).
+CHAIRS = {
+ "S1": "",
+ "S2": "",
+ "S3": "",
+ "S4": "",
+ "S5": "",
+}
+
 VENUE_MAPS = {
  "Mappin Hall": "https://maps.app.goo.gl/CkdEHVfv9mitN4pJ7",
  "AMRC":        "https://maps.app.goo.gl/WBT7CQsHMQJfFZ846",
@@ -120,6 +130,7 @@ def row(kind, time, label, who=None, sponsor=None, code=None, bold=False):
     if who: r["who"] = who
     if sponsor: r["sponsor"] = sponsor
     if code: r["talks"] = session(code)
+    if code and CHAIRS.get(code): r["chair"] = CHAIRS[code]
     if bold: r["bold"] = True
     if kind == "venue" and label in VENUE_MAPS: r["map"] = VENUE_MAPS[label]
     return r
@@ -167,7 +178,8 @@ days = [
 roster = [norm(n) for s in ("S1","S2","S3","S4","S5") for (_, n) in SESSIONS[s]]
 def oidx(a):
     k = norm(a["name"]); return roster.index(k) if k in roster else 999
-def absrec(a): return dict(name=a["name"], uni=a["uni"], title=a["title"])
+def absrec(a): return dict(name=a["name"], uni=a["uni"], title=a["title"],
+                           abstract=a["abstract"], keywords=a["keywords"])
 oral   = [absrec(a) for a in sorted([x for x in abstracts if "oral"   in x["pref"].lower()], key=lambda a:(oidx(a), a["name"]))]
 poster = [absrec(a) for a in sorted([x for x in abstracts if "poster" in x["pref"].lower()], key=lambda a:a["name"])]
 
@@ -195,6 +207,9 @@ DATA = {
  ],
  "days": days,
  "abstracts": {"oral": oral, "poster": poster},
+ # Organising committee — add members as {"name","role","bio"} (and an optional
+ # "photo":"img/..."); the section appears automatically once populated.
+ "committee": [],
  "voting": {
    "intro": "Scan the QR codes or tap the link below to choose your favourites. Voting closes during the final coffee break on Day 2.",
    "items": [
