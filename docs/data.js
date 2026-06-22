@@ -361,7 +361,7 @@ window.DATA = {
         "name": "Sofia Mushtaq",
         "uni": "University of Sheffield",
         "title": "Measuring forces experienced on human skin during frictional interactions through a combined approach of digital image correlation (DIC) based strain mapping and machine learning",
-        "abstract": "Abstract pending approval from funder",
+        "abstract": "",
         "keywords": "DIC , Biomechanics, Skin strain"
       },
       {

@@ -107,16 +107,20 @@
   /* shared abstract card: a collapsible <details> — title + author always shown,
      abstract expands on click */
   const absParas = (txt) => (txt || "").split(/\n{2,}/).map(p => p.replace(/\n/g, " ").trim()).filter(Boolean);
+  const meta = (a) => `<b>${esc(a.name)}</b>${a.uni ? ` · ${esc(a.uni)}` : ""}`;
   const absCard = (a) => {
+    const paras = absParas(a.abstract);
+    if (!paras.length) {                       // no abstract yet — plain, non-expandable
+      const d = E("div", "abs noabs");
+      d.innerHTML = `<div class="atitle">${esc(a.title)}</div><div class="ameta">${meta(a)}</div>`;
+      return d;
+    }
     const d = E("details", "abs");
     const sum = document.createElement("summary");
-    sum.innerHTML = `<span class="atitle">${esc(a.title)}</span>`
-      + `<span class="ameta"><b>${esc(a.name)}</b>${a.uni ? ` · ${esc(a.uni)}` : ""}</span>`;
+    sum.innerHTML = `<span class="atitle">${esc(a.title)}</span><span class="ameta">${meta(a)}</span>`;
     d.appendChild(sum);
-    const paras = absParas(a.abstract);
     const body = E("div", "abody");
-    if (paras.length) paras.forEach(p => body.appendChild(E("p", "apar", esc(p))));
-    else body.appendChild(E("p", "apar muted", "Abstract to follow."));
+    paras.forEach(p => body.appendChild(E("p", "apar", esc(p))));
     d.appendChild(body);
     return d;
   };

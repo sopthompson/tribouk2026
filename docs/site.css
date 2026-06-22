@@ -90,6 +90,7 @@ h2.sec{ color:var(--purple); font-size:1.6rem; font-weight:700; margin-bottom:8p
 .abs .atitle{ display:block; color:var(--purple); font-weight:700; font-size:1.12rem; line-height:1.3; }
 .abs .ameta{ display:block; color:var(--purple-d); font-style:italic; margin-top:3px; }
 .abs .ameta b{ font-style:normal; color:var(--purple); }
+.abs.noabs{ padding:14px 0; }
 .abs .abody{ padding:2px 0 16px; }
 .abs .abody .apar{ margin:9px 0; }
 .abs .abody .apar.muted{ color:var(--grey); font-style:italic; }

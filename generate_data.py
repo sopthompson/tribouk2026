@@ -25,7 +25,11 @@ def clean_abs(s):
     s = re.sub(r"[ ]{2,}", " ", s)
     s = re.sub(r" *\n *", "\n", s)
     s = re.sub(r"\n{3,}", "\n\n", s)
-    return s.strip()
+    s = s.strip()
+    # blank obvious placeholders (e.g. "Abstract pending approval from funder")
+    if re.search(r"pending approval", s, re.IGNORECASE) and len(s) < 120:
+        return ""
+    return s
 def norm(s): return re.sub(r"[^a-z]", "", s.lower())
 
 # canonical institution names (only the inconsistent ones need mapping)
