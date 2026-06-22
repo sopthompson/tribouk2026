@@ -86,7 +86,8 @@ window.DATA = {
               "uni": "University of Sheffield",
               "title": "An investigation into the efficacy of relubrication cycles in reducing wear in grease lubricated pitch bearings"
             }
-          ]
+          ],
+          "chair": "Alvaro"
         },
         {
           "kind": "break",
@@ -117,7 +118,8 @@ window.DATA = {
               "uni": "Ingram Tribology",
               "title": "Investigation into the tribological differences between plant and animal proteins using a novel test methodology"
             }
-          ]
+          ],
+          "chair": "Mustafa"
         },
         {
           "kind": "break",
@@ -230,7 +232,8 @@ window.DATA = {
               "uni": "Loughborough University",
               "title": "Tribological characterization of oil lubricated EV bearing under an electric field"
             }
-          ]
+          ],
+          "chair": "Charlotte / Jaden"
         },
         {
           "kind": "break",
@@ -267,7 +270,8 @@ window.DATA = {
               "uni": "Brunel University of London",
               "title": "Optimising radial air foil bearing performance: balancing clearance and stiffness for enhanced lift-off"
             }
-          ]
+          ],
+          "chair": "Spike"
         },
         {
           "kind": "item",
@@ -308,7 +312,8 @@ window.DATA = {
               "uni": "University of Leeds",
               "title": "Investigation of friction, wear and particle emissions from coated and uncoated commercial vehicle brake rotors using a small-scale tribological approach"
             }
-          ]
+          ],
+          "chair": "Damien"
         },
         {
           "kind": "item",
@@ -405,7 +410,7 @@ window.DATA = {
         "name": "Seona Mauchline",
         "uni": "University of Birmingham",
         "title": "Interfacial mesh asymmetry governs lubrication and frictional transition in cartilage biomimetic hydrogels",
-        "abstract": "Osteoarthritis commonly manifests as an isolated cartilage lesion, driven by interfacial degradation during sliding, leading to structural and mechanical asymmetry between opposing seemingly ‘healthy’ cartilage surface. As one surface deteriorates, biphasic lubrication is disrupted, increasing interaction and accelerating degradation within the joint space (Ateshian, 2009).\nHydrogels provide a simplified biomimetic model to investigate these mechanisms, mimicking collagen network heterogeneity and localised degradation through mesh size variation (Lin and Klein, 2022). This enables assessment of how mesh mismatch governs lubrication and frictional behaviour, consistent with soft matter lubrication theories in which load bearing is controlled by fluid pressurisation within deformable polymer networks rather than solid–solid contact.\nA biomimetic hydrogel on hydrogel model was developed to replicate the cartilage interface. Polyacrylamide hydrogels with varied mesh size ratios (ξsubstrate /, ξprobe) ranging from approximately 0.3 to 8.0 (Urueña et al., 2015), were subjected to reciprocating sliding at 0.2 mm/s and 1.0 mm/s. This enabled evaluation of interfacial mesh asymmetry on lubrication and friction under dynamic loading.\nA tribological transition was observed, in which the coefficient of friction (μ) increased as mesh size ratio increased. Closely matched systems ((ξsubstrate / ξprobe) < 1.5) exhibited a low-friction regime (μ typically < 0.05), consistent with sustained fluid load support. In contrast, increasing mesh asymmetry raised friction in a mesh-size dependent manner, with transitions occurring at higher ratios (ξsubstrate/ ξprobe > 4). At high asymmetry, friction increased (μ > 0.05), indicating a shift from fluid-supported lubrication to polymer network interactions and viscoelastic dissipation. Higher sliding velocity further amplified friction, particularly at elevated mesh ratios, suggesting velocity dependent destabilisation of the hydrated interfacial region responsible for load-bearing lubrication.\nThese findings highlight that minimising interfacial mesh mismatch is key to maintaining low friction and provide a framework for cartilage repair design, where structural compatibility governs long-term durability.\n\nBibliography:\n1. Ateshian, G.A. (2009) ‘The role of interstitial fluid pressurization in articular cartilage lubrication’, Journal of Biomechanics, 42(9), pp. 1163–1176. Available at: https://doi.org/10.1016/j.jbiomech.2009.04.040.\n2. Lin, W. and Klein, J. (2022) ‘Hydration Lubrication in Biomedical Applications: From Cartilage to Hydrogels’, Accounts of Materials Research, 3(2), pp. 213–223. Available at: https://doi.org/10.1021/accountsmr.1c00219.\n3. Urueña, J.M. et al. (2015) ‘Mesh Size Control of Polymer Fluctuation Lubrication in Gemini Hydrogels’, Biotribology, 1–2, pp. 24–29. Available at: https://doi.org/10.1016/j.biotri.2015.03.001.",
+        "abstract": "Osteoarthritis commonly manifests as an isolated cartilage lesion, driven by interfacial degradation during sliding, leading to structural and mechanical asymmetry between opposing seemingly ‘healthy’ cartilage surface. As one surface deteriorates, biphasic lubrication is disrupted, increasing interaction and accelerating degradation within the joint space (Ateshian, 2009).\nHydrogels provide a simplified biomimetic model to investigate these mechanisms, mimicking collagen network heterogeneity and localised degradation through mesh size variation (Lin and Klein, 2022). This enables assessment of how mesh mismatch governs lubrication and frictional behaviour, consistent with soft matter lubrication theories in which load bearing is controlled by fluid pressurisation within deformable polymer networks rather than solid–solid contact.\nA biomimetic hydrogel on hydrogel model was developed to replicate the cartilage interface. Polyacrylamide hydrogels with varied mesh size ratios (ξsubstrate /, ξprobe) ranging from approximately 0.3 to 8.0 (Urueña et al., 2015), were subjected to reciprocating sliding at 0.2 mm/s and 1.0 mm/s. This enabled evaluation of interfacial mesh asymmetry on lubrication and friction under dynamic loading.\nA tribological transition was observed, in which the coefficient of friction (μ) increased as mesh size ratio increased. Closely matched systems ((ξsubstrate / ξprobe) < 1.5) exhibited a low-friction regime (μ typically < 0.05), consistent with sustained fluid load support. In contrast, increasing mesh asymmetry raised friction in a mesh-size dependent manner, with transitions occurring at higher ratios (ξsubstrate/ ξprobe > 4). At high asymmetry, friction increased (μ > 0.05), indicating a shift from fluid-supported lubrication to polymer network interactions and viscoelastic dissipation. Higher sliding velocity further amplified friction, particularly at elevated mesh ratios, suggesting velocity dependent destabilisation of the hydrated interfacial region responsible for load-bearing lubrication.\nThese findings highlight that minimising interfacial mesh mismatch is key to maintaining low friction and provide a framework for cartilage repair design, where structural compatibility governs long-term durability.",
         "keywords": "Interfacial Mesh Asymmetry, Hydrogel Tribology, Cartilage Biomimetics"
       },
       {
@@ -484,7 +489,7 @@ window.DATA = {
         "name": "Mu Qiao",
         "uni": "University of Leeds",
         "title": "The effect of lubricant contamination on fretting wear of engine piston rings and cylinder liners in PHEVs",
-        "abstract": "Abstract\nPlug-in hybrid electric vehicle (PHEV) operation is characterised by frequent stop–start events and short engine-on periods, creating a uniquely challenging lubrication environment in which bulk oil temperature may remain suppressed and the evaporation of volatile contaminants is limited. Consequently, fuel dilution and water can accumulate and persist in the lubricant. An on-road fleet study conducted under extreme cold conditions reported fuel dilution up to 20% (m/m) and water dilution approaching 5% in PHEV engine oils [1].\nDuring engine-off intervals, many interfaces receive no lubricant replenishment and are sustained only by residual oil films that may already contain elevated fuel and water concentrations. Vehicle-borne vibration can then impose small-amplitude micro-motion on nominally static contacts under boundary-dominated and potentially starved conditions, thereby creating potential conditions for fretting-type degradation [2].\nDespite these risks, the combined effects of fuel dilution and water-in-oil emulsification under fretting conditions remain insufficiently understood. This study therefore quantifies how PHEV-relevant fuel dilution and water-in-oil emulsification affect friction, wear, and zinc dialkyldithiophosphate (ZDDP) tribofilm formation under lubricated fretting conditions, with reciprocating sliding used as a benchmark. This investigation builds directly on prior evidence that water can degrade ZDDP anti-wear performance [3], fuel can alter the tribological response of ZDDP-containing lubricants beyond viscosity effects [4], and simultaneous gasoline–water dilution can suppress film thickness and antiwear film development while increasing wear risk [5].\nExperiments are conducted using a ball-on-flat ferrous contact using the tribometer shown in Figure 1. The lubricant formulation comprises PAO-6 blended with secondary ZDDP at 800 ppm phosphorus (P), with contamination matrices of water (0.5–3 wt%) and gasoline (5–20 wt%). Fretting tests are performed at 30 N, 30 Hz, and ±10 μm for 3 h. Sliding benchmarks on a TE77 are conducted at 30 N, 5 Hz, and ±5 mm for 3 h at 80 °C.\nReferences\n[1]Zhang R, Andrew R, Martin E, Hu G. A study into the engine oil performance on plug-in hybrid electric vehicles through an on-road fleet test under extreme cold environmental condition. SAE Technical Paper 2025-01-8471, 2025.\n[2]De la Presilla R, Wandel S, Stammler M, Grebe M, Poll G, Glavatskih S. Oscillating rolling element bearings: A review of tribotesting and analysis approaches. Tribology International. 2023;188:108805.\n[3]Cen H, Morina A, Neville A, Pasaribu R, Nedelcu I. Effect of water on ZDDP anti-wear performance and related tribochemistry in lubricated steel/steel pure sliding contacts. Tribology International. 2012;56:47–57.\n[4]Zhou Y, Li W, Stump BC, Connatser RM, Lazarevic S, Qu J. Impact of Fuel Contents on Tribological Performance of PAO Base Oil and ZDDP. Lubricants. 2018;6(3):79.\n[5]Zhang J, Yu M, Joedicke A, Reddyhoff T. Characterising the effects of simultaneous water and gasoline dilution on lubricant performance. Tribology International. 2023;179:108089",
+        "abstract": "Plug-in hybrid electric vehicle (PHEV) operation is characterised by frequent stop–start events and short engine-on periods, creating a uniquely challenging lubrication environment in which bulk oil temperature may remain suppressed and the evaporation of volatile contaminants is limited. Consequently, fuel dilution and water can accumulate and persist in the lubricant. An on-road fleet study conducted under extreme cold conditions reported fuel dilution up to 20% (m/m) and water dilution approaching 5% in PHEV engine oils [1].\nDuring engine-off intervals, many interfaces receive no lubricant replenishment and are sustained only by residual oil films that may already contain elevated fuel and water concentrations. Vehicle-borne vibration can then impose small-amplitude micro-motion on nominally static contacts under boundary-dominated and potentially starved conditions, thereby creating potential conditions for fretting-type degradation [2].\nDespite these risks, the combined effects of fuel dilution and water-in-oil emulsification under fretting conditions remain insufficiently understood. This study therefore quantifies how PHEV-relevant fuel dilution and water-in-oil emulsification affect friction, wear, and zinc dialkyldithiophosphate (ZDDP) tribofilm formation under lubricated fretting conditions, with reciprocating sliding used as a benchmark. This investigation builds directly on prior evidence that water can degrade ZDDP anti-wear performance [3], fuel can alter the tribological response of ZDDP-containing lubricants beyond viscosity effects [4], and simultaneous gasoline–water dilution can suppress film thickness and antiwear film development while increasing wear risk [5].\nExperiments are conducted using a ball-on-flat ferrous contact using the tribometer shown in Figure 1. The lubricant formulation comprises PAO-6 blended with secondary ZDDP at 800 ppm phosphorus (P), with contamination matrices of water (0.5–3 wt%) and gasoline (5–20 wt%). Fretting tests are performed at 30 N, 30 Hz, and ±10 μm for 3 h. Sliding benchmarks on a TE77 are conducted at 30 N, 5 Hz, and ±5 mm for 3 h at 80 °C.",
         "keywords": "Friction; Fretting; Lubricant additives; Tribofilms; 3rd bodies"
       },
       {

@@ -11,9 +11,17 @@ def clean(s):
     if s is None: return ""
     return re.sub(r"\s+", " ", str(s).replace("\t", " ")).strip()
 def clean_abs(s):
-    """Keep the abstract exactly as submitted: full text, paragraph breaks preserved."""
+    """Keep the abstract text as submitted (no rewording/shortening), but tidy two
+    things people sometimes include: a stray 'Abstract' heading at the very start,
+    and a trailing references / bibliography list."""
     if s is None: return ""
     s = str(s).replace("\r\n", "\n").replace("\r", "\n").replace("\t", " ")
+    # drop a standalone "Abstract" / "Abstract:" heading line at the start
+    # (only when it's its own line — leaves e.g. "Abstract pending approval…" intact)
+    s = re.sub(r"^\s*abstract\s*:?\s*\n+", "", s, flags=re.IGNORECASE)
+    # cut a trailing references / bibliography section (header on its own line)
+    s = re.split(r"\n\s*(?:references|bibliography|reference list)\s*:?\s*\n",
+                 s, maxsplit=1, flags=re.IGNORECASE)[0]
     s = re.sub(r"[ ]{2,}", " ", s)
     s = re.sub(r" *\n *", "\n", s)
     s = re.sub(r"\n{3,}", "\n\n", s)
@@ -112,12 +120,12 @@ def session(code):
 
 # Session chairs — fill in the display name for each session and re-run; the
 # chair appears under the session title on the schedule (blank = nothing shown).
-CHAIRS = {
- "S1": "",
- "S2": "",
- "S3": "",
- "S4": "",
- "S5": "",
+CHAIRS = {  # from Schedule Plan v2
+ "S1": "Alvaro",
+ "S2": "Mustafa",
+ "S3": "Charlotte / Jaden",
+ "S4": "Spike",
+ "S5": "Damien",
 }
 
 VENUE_MAPS = {

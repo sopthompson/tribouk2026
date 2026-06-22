@@ -104,13 +104,20 @@
   });
   main.appendChild(ks);
 
-  /* shared abstract card: title, author · institution, then paragraphs */
+  /* shared abstract card: a collapsible <details> — title + author always shown,
+     abstract expands on click */
   const absParas = (txt) => (txt || "").split(/\n{2,}/).map(p => p.replace(/\n/g, " ").trim()).filter(Boolean);
   const absCard = (a) => {
-    const d = E("div", "abs");
-    d.innerHTML = `<h3>${esc(a.title)}</h3>`
-      + `<div class="ameta"><b>${esc(a.name)}</b>${a.uni ? ` · ${esc(a.uni)}` : ""}</div>`;
-    absParas(a.abstract).forEach(p => d.appendChild(E("p", "apar", esc(p))));
+    const d = E("details", "abs");
+    const sum = document.createElement("summary");
+    sum.innerHTML = `<span class="atitle">${esc(a.title)}</span>`
+      + `<span class="ameta"><b>${esc(a.name)}</b>${a.uni ? ` · ${esc(a.uni)}` : ""}</span>`;
+    d.appendChild(sum);
+    const paras = absParas(a.abstract);
+    const body = E("div", "abody");
+    if (paras.length) paras.forEach(p => body.appendChild(E("p", "apar", esc(p))));
+    else body.appendChild(E("p", "apar muted", "Abstract to follow."));
+    d.appendChild(body);
     return d;
   };
 
