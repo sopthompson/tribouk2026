@@ -87,7 +87,7 @@ window.DATA = {
               "title": "An investigation into the efficacy of relubrication cycles in reducing wear in grease lubricated pitch bearings"
             }
           ],
-          "chair": "Alvaro"
+          "chair": "Alvaro Barrueto"
         },
         {
           "kind": "break",
@@ -119,7 +119,7 @@ window.DATA = {
               "title": "Investigation into the tribological differences between plant and animal proteins using a novel test methodology"
             }
           ],
-          "chair": "Mustafa"
+          "chair": "Mustafa Faisal"
         },
         {
           "kind": "break",
@@ -130,6 +130,7 @@ window.DATA = {
           "kind": "venue",
           "time": "",
           "label": "AMRC",
+          "chair": "Forbes Gusha",
           "map": "https://maps.app.goo.gl/WBT7CQsHMQJfFZ846"
         },
         {
@@ -233,7 +234,7 @@ window.DATA = {
               "title": "Tribological characterization of oil lubricated EV bearing under an electric field"
             }
           ],
-          "chair": "Charlotte / Jaden"
+          "chair": "Charlotte Currie & Jaden Davies"
         },
         {
           "kind": "break",
@@ -271,7 +272,7 @@ window.DATA = {
               "title": "Optimising radial air foil bearing performance: balancing clearance and stiffness for enhanced lift-off"
             }
           ],
-          "chair": "Spike"
+          "chair": "Spike Thompson"
         },
         {
           "kind": "item",
@@ -313,7 +314,7 @@ window.DATA = {
               "title": "Investigation of friction, wear and particle emissions from coated and uncoated commercial vehicle brake rotors using a small-scale tribological approach"
             }
           ],
-          "chair": "Damien"
+          "chair": "Damien Dooley"
         },
         {
           "kind": "item",

@@ -54,6 +54,7 @@
         const vl = E("div", "venue-label", esc(r.label));
         if (r.map) vl.innerHTML += ` <a class="vmap" href="${esc(r.map)}" title="Open in Google Maps"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a>`;
         s.appendChild(vl);
+        if (r.chair) s.appendChild(E("div", "venue-chair", "Chair: " + esc(r.chair)));
         return;
       }
       const row = E("div", "row " + (r.kind === "keynote" ? "key" : r.kind === "break" ? "brk" : r.kind === "session" ? "sess" : "item"));

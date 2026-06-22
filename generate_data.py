@@ -124,12 +124,12 @@ def session(code):
 
 # Session chairs — fill in the display name for each session and re-run; the
 # chair appears under the session title on the schedule (blank = nothing shown).
-CHAIRS = {  # from Schedule Plan v2
- "S1": "Alvaro",
- "S2": "Mustafa",
- "S3": "Charlotte / Jaden",
- "S4": "Spike",
- "S5": "Damien",
+CHAIRS = {  # from Schedule Plan v2 (full names)
+ "S1": "Alvaro Barrueto",
+ "S2": "Mustafa Faisal",
+ "S3": "Charlotte Currie & Jaden Davies",
+ "S4": "Spike Thompson",
+ "S5": "Damien Dooley",
 }
 
 VENUE_MAPS = {
@@ -137,12 +137,13 @@ VENUE_MAPS = {
  "AMRC":        "https://maps.app.goo.gl/WBT7CQsHMQJfFZ846",
  "Guyshi":      "https://maps.app.goo.gl/sjytt6beGNBByQDw6",
 }
-def row(kind, time, label, who=None, sponsor=None, code=None, bold=False):
+def row(kind, time, label, who=None, sponsor=None, code=None, bold=False, chair=None):
     r = dict(kind=kind, time=time, label=label)
     if who: r["who"] = who
     if sponsor: r["sponsor"] = sponsor
     if code: r["talks"] = session(code)
     if code and CHAIRS.get(code): r["chair"] = CHAIRS[code]
+    if chair: r["chair"] = chair            # explicit chair (e.g. on a venue block)
     if bold: r["bold"] = True
     if kind == "venue" and label in VENUE_MAPS: r["map"] = VENUE_MAPS[label]
     return r
@@ -157,7 +158,7 @@ days = [
    row("break", "11:15–11:30", "Coffee break", sponsor="Sponsored by Phoenix Tribology"),
    row("session","11:30–12:30","Presentation Session 2", code="S2"),
    row("break", "12:30–13:10", "Travel to AMRC"),
-   row("venue", "", "AMRC"),
+   row("venue", "", "AMRC", chair="Forbes Gusha"),
    row("break", "13:10–13:50", "Lunch"),
    row("item",  "13:50–14:00", "Introduction to AMRC"),
    row("keynote","14:00–14:30","Keynote 2", who="Leon Proud"),
