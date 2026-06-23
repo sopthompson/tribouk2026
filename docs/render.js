@@ -113,22 +113,6 @@
   chrome(ks, "Keynote Speakers");
   add(ks);
 
-  /* ---------- ORAL PRESENTATION ABSTRACTS ---------- */
-  const op = E("section", "sheet page-break");
-  op.appendChild(E("h1", "title", "Oral Presentations"));
-  op.appendChild(E("p", "copy", "Abstracts for the oral presentations, listed in running order."));
-  D.abstracts.oral.forEach(a => op.appendChild(absBlock(a)));
-  chrome(op, "Oral Presentations");
-  add(op);
-
-  /* ---------- POSTER PRESENTATION ABSTRACTS ---------- */
-  const ps = E("section", "sheet page-break");
-  ps.appendChild(E("h1", "title", "Poster Presentations"));
-  ps.appendChild(E("p", "copy", "Abstracts for the poster presentations."));
-  D.abstracts.poster.forEach(a => ps.appendChild(absBlock(a)));
-  chrome(ps, "Poster Presentations");
-  add(ps);
-
   /* ---------- VOTING ---------- */
   const vt = E("section", "sheet page-break");
   vt.appendChild(E("h1", "title", "Voting"));
@@ -187,4 +171,21 @@
     chrome(cm, "Organising Committee");
     add(cm);
   }
+
+  /* ---------- ABSTRACTS (appendix, at the end) ---------- */
+  /* ---------- ORAL PRESENTATION ABSTRACTS ---------- */
+  const op = E("section", "sheet page-break");
+  op.appendChild(E("h1", "title", "Oral Presentations"));
+  op.appendChild(E("p", "copy", "Abstracts for the oral presentations, listed in running order."));
+  D.abstracts.oral.forEach(a => op.appendChild(absBlock(a)));
+  chrome(op, "Oral Presentations");
+  add(op);
+
+  /* ---------- POSTER PRESENTATION ABSTRACTS ---------- */
+  const ps = E("section", "sheet page-break");
+  ps.appendChild(E("h1", "title", "Poster Presentations"));
+  ps.appendChild(E("p", "copy", "Abstracts for the poster presentations."));
+  D.abstracts.poster.forEach(a => ps.appendChild(absBlock(a)));
+  chrome(ps, "Poster Presentations");
+  add(ps);
 })();

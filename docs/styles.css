@@ -46,30 +46,30 @@ p.copy{ font-size:10.5pt; margin-bottom:3.5mm; text-align:justify; }
 .cover .hosted img{ height:27mm; }
 
 /* ===== SCHEDULE ===== */
-.dayhead{ color:var(--purple); font-weight:700; font-size:14pt; margin-bottom:2mm; }
+.dayhead{ color:var(--purple); font-weight:700; font-size:14pt; margin-bottom:1.4mm; }
 .venue-label{ color:var(--purple); font-weight:700; font-size:9pt; letter-spacing:.14em;
-  text-transform:uppercase; padding:1.6mm 0 .8mm; margin-top:.3mm;
+  text-transform:uppercase; padding:1.1mm 0 .5mm; margin-top:.2mm;
   border-bottom:.9mm solid var(--purple); break-after:avoid; }
-.venue-chair{ color:var(--grey); font-style:italic; font-size:8.8pt; margin:.8mm 0 .4mm; break-after:avoid; }
+.venue-chair{ color:var(--grey); font-style:italic; font-size:8.8pt; margin:.5mm 0 .2mm; break-after:avoid; }
 .venue-label .vmap{ display:inline-block; margin-left:2mm; color:var(--purple); }
 .venue-label .vmap svg{ width:3.6mm; height:3.6mm; fill:currentColor; vertical-align:-0.7mm; }
 
 .row{ display:grid; grid-template-columns:26mm 1fr; border-bottom:.4mm solid var(--line);
   break-inside:avoid; }
-.row > .t{ padding:0.7mm 3mm 0.7mm 0; font-weight:700; font-size:9.5pt; color:var(--purple);
+.row > .t{ padding:0.45mm 3mm 0.45mm 0; font-weight:700; font-size:9.5pt; color:var(--purple);
   font-variant-numeric:tabular-nums; white-space:nowrap; }
-.row > .c{ padding:0.7mm 0 0.7mm 3mm; }
+.row > .c{ padding:0.45mm 0 0.45mm 3mm; }
 /* single-colour schedule: purple times + purple event types + black titles */
-.row .lead-row{ font-size:10.5pt; line-height:1.25; color:var(--purple); }
+.row .lead-row{ font-size:10.5pt; line-height:1.2; color:var(--purple); }
 .row.key .lead-row{ font-weight:700; }
-.row .spon{ display:block; font-style:italic; font-size:8.5pt; color:var(--purple); margin-top:.4mm; }
+.row .spon{ display:block; font-style:italic; font-size:8.5pt; color:var(--purple); margin-top:.3mm; }
 
-.row.sess .slabel{ color:var(--purple); font-weight:700; font-size:10.5pt; margin-bottom:.8mm; }
-.row.sess .schair{ color:var(--grey); font-style:italic; font-size:8.8pt; margin:-.4mm 0 1.2mm; }
-.talk{ margin-top:0.9mm; }
+.row.sess .slabel{ color:var(--purple); font-weight:700; font-size:10.5pt; margin-bottom:.5mm; }
+.row.sess .schair{ color:var(--grey); font-style:italic; font-size:8.8pt; margin:-.4mm 0 .7mm; }
+.talk{ margin-top:0.6mm; }
 .talk .th{ color:var(--purple); font-weight:700; font-size:9.3pt; }
 .talk .th .uni{ font-weight:400; }
-.talk .tt{ color:var(--ink); font-size:9pt; line-height:1.22; }
+.talk .tt{ color:var(--ink); font-size:9pt; line-height:1.18; }
 
 /* ===== GENERAL INFORMATION ===== */
 .cards{ display:grid; grid-template-columns:1fr 1fr; gap:8mm; margin-bottom:7mm; }
