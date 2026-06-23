@@ -79,12 +79,6 @@ window.DATA = {
               "name": "Zhifeng Hu",
               "uni": "University of Huddersfield",
               "title": "Condition monitoring of lubricant degradation in journal bearing system based on wireless on-rotor sensing method"
-            },
-            {
-              "time": "10:55",
-              "name": "Michael Bartram",
-              "uni": "University of Sheffield",
-              "title": "An investigation into the efficacy of relubrication cycles in reducing wear in grease lubricated pitch bearings"
             }
           ],
           "chair": "Alvaro Barrueto"
@@ -350,13 +344,6 @@ window.DATA = {
         "title": "Condition monitoring of lubricant degradation in journal bearing system based on wireless on-rotor sensing method",
         "abstract": "Friction-induced vibrations in journal bearings are typically caused by inadequate lubrication, and lubricant properties play a vital role in preventing such abnormal vibrations. Among numerous lubricant performance indicators, viscosity is one of the most critical factors affecting the stable operation of journal bearings. Therefore, investigating the effect of lubricant viscosity on the friction behavior of journal bearings is fundamentally important. This paper employed a wireless acceleration sensing method to investigate the effects of three lubricants with different viscosities on friction-induced vibrations in a journal bearing system. It was found that higher-viscosity lubricants effectively mitigate high-frequency resonance in journal bearings. Experimental results demonstrate that high-viscosity lubricants can significantly reduce undesirable vibration behavior caused by friction in journal bearings. Additionally, the results validate that the wireless acceleration sensing technique can effectively distinguish the vibration response of journal bearings influenced by lubricant viscosity.",
         "keywords": "Viscosity degradation; Journal bearings; Friction-induced vibration; Wireless on-rotor sensing."
-      },
-      {
-        "name": "Michael Bartram",
-        "uni": "University of Sheffield",
-        "title": "An investigation into the efficacy of relubrication cycles in reducing wear in grease lubricated pitch bearings",
-        "abstract": "A new testing machine has been developed that can analyse the effect of oscillation cycles on wear in grease lubricated ball bearings, scaled to simulate wind turbine pitch bearing operating conditions. The machine uses electrical impedance methods to measure lubricant film thickness in the contact, which has not been done before in an oscillating application. Initial tests indicate that the machine behaves as expected. Further testing will be done as the electrical impedance measurements are implemented. As part of the testing, the effect of relubrication cycles on wear will be investigated.",
-        "keywords": "Pitch bearings, grease, oscillation"
       },
       {
         "name": "Sofia Mushtaq",

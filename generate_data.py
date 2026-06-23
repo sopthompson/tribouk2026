@@ -106,6 +106,9 @@ for r in list(ws.iter_rows(values_only=True))[1:]:
     name = " ".join(p)
     abstracts.append(dict(name=fix_name(name), uni=fix_uni(r[4]), title=fix_title(r[8]),
                           keywords=clean(r[9]), abstract=clean_abs(r[10]), pref=clean(r[12])))
+# presenters withdrawn from the programme — removed from schedule and abstracts
+WITHDRAWN = {norm("Michael Bartram")}
+abstracts = [a for a in abstracts if norm(a["name"]) not in WITHDRAWN]
 title_by_name = {norm(a["name"]): a["title"] for a in abstracts}
 uni_by_name   = {norm(a["name"]): a["uni"]   for a in abstracts}
 def ttl(n): return title_by_name.get(norm(n), "")
@@ -113,7 +116,7 @@ def uni(n): return uni_by_name.get(norm(n), "")
 
 # ---- presentation sessions (running order) ----
 SESSIONS = {
- "S1": [("10:15","Yun Zhao"),("10:35","Zhifeng Hu"),("10:55","Michael Bartram")],
+ "S1": [("10:15","Yun Zhao"),("10:35","Zhifeng Hu")],
  "S2": [("11:30","Sofia Mushtaq"),("11:50","Zhen Dong"),("12:10","Osian Thomas")],
  "S3": [("10:00","Song Yang"),("10:20","Oluwatamilore Adenipekun"),("10:40","Siyu Wang")],
  "S4": [("11:15","Ziyuan Ren"),("11:35","Seona Mauchline"),("11:55","Charlotte Currie"),("12:15","Paula Sebastian Asenjo")],
