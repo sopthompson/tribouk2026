@@ -45,6 +45,13 @@ p.copy{ font-size:10.5pt; margin-bottom:3.5mm; text-align:justify; }
   padding-top:7mm; border-top:.4mm solid var(--line); }
 .cover .hosted img{ height:27mm; }
 
+/* ===== CONTENTS ===== */
+.toc-list{ list-style:none; margin-top:7mm; }
+.toc-list li{ display:flex; align-items:baseline; padding:3.4mm 0;
+  border-bottom:.3mm solid var(--line); }
+.toc-list li:first-child{ border-top:.3mm solid var(--line); }
+.toc-list .toc-label{ color:var(--purple); font-weight:700; font-size:13pt; }
+
 /* ===== SCHEDULE ===== */
 .dayhead{ color:var(--purple); font-weight:700; font-size:14pt; margin-bottom:1.4mm; }
 .venue-label{ color:var(--purple); font-weight:700; font-size:9pt; letter-spacing:.14em;

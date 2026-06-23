@@ -41,6 +41,7 @@ def render_html(chrome):
 # running header title per section — detected from the page's own heading,
 # carried forward onto that section's continuation pages
 SECTION_ANCHORS = [
+    ("Contents",             "Contents"),
     ("Welcome to TriboUK",   "Welcome"),
     ("DAY 1",                "Schedule"),
     ("DAY 2",                "Schedule"),
@@ -52,6 +53,44 @@ SECTION_ANCHORS = [
     ("Organising Committee", "Organising Committee"),
 ]
 
+# contents-page rows: (label as printed on the contents page, a unique string
+# that identifies that section's first page). Labels must match render.js.
+TOC = [
+    ("Welcome",                       "Welcome to TriboUK"),
+    ("Schedule",                      "DAY 1"),
+    ("Keynote Speakers",              "Keynote Speakers"),
+    ("Voting",                        "choose your favourites"),
+    ("Sponsors & Partners",           "made possible through"),
+    ("Organising Committee",          "Organising Committee"),
+    ("Oral Presentation Abstracts",   "Abstracts for the oral presentations"),
+    ("Poster Presentation Abstracts", "Abstracts for the poster presentations"),
+]
+
+def stamp_toc(doc, W):
+    """Fill in the real page number beside each contents-page entry."""
+    toc_page = next((i for i in range(1, doc.page_count)
+                     if "Contents" in doc[i].get_text()), None)
+    if toc_page is None:
+        return
+    # map each printed label -> its text span (for the exact baseline)
+    spans = {}
+    for b in doc[toc_page].get_text("dict")["blocks"]:
+        for ln in b.get("lines", []):
+            for sp in ln.get("spans", []):
+                spans.setdefault(sp["text"].strip(), sp)
+    for label, anchor in TOC:
+        sp = spans.get(label)
+        if sp is None:
+            continue
+        sec = next((j for j in range(1, doc.page_count)
+                    if j != toc_page and anchor in doc[j].get_text()), None)
+        if sec is None:
+            continue
+        num = str(sec)
+        tw = fitz.get_text_length(num, fontname="hebo", fontsize=13)
+        doc[toc_page].insert_text((W - 18*MM - tw, sp["origin"][1]), num,
+                                  fontname="hebo", fontsize=13, color=PURPLE)
+
 def stamp(raw):
     doc = fitz.open(raw)
     # drop empty pages that multi-column + forced page-break can emit in Chromium
@@ -60,6 +99,7 @@ def stamp(raw):
     for i in reversed(drop):
         doc.delete_page(i)
     W = doc[0].rect.width
+    stamp_toc(doc, W)  # fill contents-page numbers from the raw (pre-band) text
     pm = fitz.Pixmap(WHITE_LOGO); logo_ratio = pm.width / pm.height
     current = "TriboUK 2026"
     for i, page in enumerate(doc):

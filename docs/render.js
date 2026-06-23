@@ -35,6 +35,26 @@
     <div class="botbar lilac"></div><div class="botbar"></div>`;
   add(cover);
 
+  /* ---------- CONTENTS ---------- */
+  // Labels only; build.py stamps the real page number on each row (it knows the
+  // final layout). Entries here must match the TOC list in build.py.
+  const toc = E("section", "sheet page-break toc");
+  toc.appendChild(E("h1", "title", "Contents"));
+  const tocList = E("ul", "toc-list");
+  const tocEntries = [];
+  if (D.welcome && D.welcome.length) tocEntries.push("Welcome");
+  tocEntries.push("Schedule", "Keynote Speakers", "Voting", "Sponsors & Partners");
+  if (D.committee && D.committee.length) tocEntries.push("Organising Committee");
+  tocEntries.push("Oral Presentation Abstracts", "Poster Presentation Abstracts");
+  tocEntries.forEach(label => {
+    const li = document.createElement("li");
+    li.innerHTML = `<span class="toc-label">${esc(label)}</span>`;
+    tocList.appendChild(li);
+  });
+  toc.appendChild(tocList);
+  chrome(toc, "Contents");
+  add(toc);
+
   /* ---------- WELCOME (only if text has been supplied) ---------- */
   if (D.welcome && D.welcome.length) {
     const wel = E("section", "sheet page-break");
