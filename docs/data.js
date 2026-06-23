@@ -110,7 +110,7 @@ window.DATA = {
               "time": "12:10",
               "name": "Osian Thomas",
               "uni": "Ingram Tribology",
-              "title": "Investigation into the tribological differences between plant and animal proteins using a novel test methodology"
+              "title": "Development of biotribology testing techniques for consumer product testing"
             }
           ],
           "chair": "Mustafa Faisal"
@@ -362,8 +362,8 @@ window.DATA = {
       {
         "name": "Osian Thomas",
         "uni": "Ingram Tribology",
-        "title": "Investigation into the tribological differences between plant and animal proteins using a novel test methodology",
-        "abstract": "The demand for the use of alternative proteins has risen dramatically in recent years. They are known to be a more sustainable and resource-efficient solution in comparison to animal-based protein products. However, the sensory profile is unpalatable to the average consumer and requires research to improve mouthfeel. Current tribological test methods are limited both in their abilities to differentiate between small variations, and mimic real-life eating conditions. Factors such as load variation, directionality, lubrication behaviour and biomimicry are vital to aid the development of new test methods on a novel test rig (BTM). Important considerations in this field include more accurately simulating the eating process to enhance the mouthfeel of consumer products, with the aim to improve marketability of more palatable plant-based proteins.",
+        "title": "Development of biotribology testing techniques for consumer product testing",
+        "abstract": "A wide range of tools is available to the modern tribologist for investigating hard, highly loaded, non-conformal contacts. These techniques have evolved steadily since the early 1920s—from the four-ball tester to modern universal tribometers—offering multiple load, motion, and contact geometry configurations.\n\nIn contrast, biotribology, a rapidly expanding field with applications in biomedical, food, and cosmetic science, lacks an equivalent breadth of standardised testing approaches. This work presents the development of novel biotribology testing protocols using modified sliding–rolling rigs and multi-directional, low-load instruments. The test sequences employ textured soft surfaces to simulate skin and oral interfaces, combined with saliva mimics. Load and motion profiles are varied to replicate human interactions during product use or consumption, enabling more representative and reproducible frictional measurements for consumer product evaluation.",
         "keywords": "Protein, Mouthfeel, Astringency"
       },
       {

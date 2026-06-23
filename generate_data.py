@@ -109,6 +109,30 @@ for r in list(ws.iter_rows(values_only=True))[1:]:
 # presenters withdrawn from the programme — removed from schedule and abstracts
 WITHDRAWN = {norm("Michael Bartram")}
 abstracts = [a for a in abstracts if norm(a["name"]) not in WITHDRAWN]
+
+# updated title / abstract supplied after submission, keyed by normalised name
+OVERRIDES = {
+ norm("Osian Thomas"): {
+   "title": "Development of biotribology testing techniques for consumer product testing",
+   "abstract": (
+     "A wide range of tools is available to the modern tribologist for investigating "
+     "hard, highly loaded, non-conformal contacts. These techniques have evolved steadily "
+     "since the early 1920s—from the four-ball tester to modern universal tribometers—"
+     "offering multiple load, motion, and contact geometry configurations.\n\n"
+     "In contrast, biotribology, a rapidly expanding field with applications in biomedical, "
+     "food, and cosmetic science, lacks an equivalent breadth of standardised testing "
+     "approaches. This work presents the development of novel biotribology testing protocols "
+     "using modified sliding–rolling rigs and multi-directional, low-load instruments. The "
+     "test sequences employ textured soft surfaces to simulate skin and oral interfaces, "
+     "combined with saliva mimics. Load and motion profiles are varied to replicate human "
+     "interactions during product use or consumption, enabling more representative and "
+     "reproducible frictional measurements for consumer product evaluation."),
+ },
+}
+for a in abstracts:
+    o = OVERRIDES.get(norm(a["name"]))
+    if o: a.update(o)
+
 title_by_name = {norm(a["name"]): a["title"] for a in abstracts}
 uni_by_name   = {norm(a["name"]): a["uni"]   for a in abstracts}
 def ttl(n): return title_by_name.get(norm(n), "")
