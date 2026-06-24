@@ -100,7 +100,7 @@
       : `<div class="kphoto kphoto-ph">${esc(initials(k.name))}</div>`;
     d.innerHTML = photo + `<div class="kbody"><div class="klabel">${esc(k.label)}</div><h3>${esc(k.name)}</h3>`
       + (k.affil ? `<div class="aff">${esc(k.affil)}</div>` : "")
-      + (k.bio ? `<p>${esc(k.bio)}</p>` : "") + `</div>`;
+      + (k.bio ? k.bio.split(/\n{2,}/).map(p => p.replace(/\n/g, " ").trim()).filter(Boolean).map(p => `<p>${esc(p)}</p>`).join("") : "") + `</div>`;
     ks.appendChild(d);
   });
   main.appendChild(ks);

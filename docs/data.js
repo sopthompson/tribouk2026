@@ -18,9 +18,9 @@ window.DATA = {
     {
       "label": "Keynote 2",
       "name": "Leon Proud",
-      "affil": "Advanced Manufacturing Research Centre (AMRC)",
+      "affil": "Senior Project Engineer — University of Sheffield AMRC",
       "photo": "",
-      "bio": ""
+      "bio": "Dr Leon Proud is a Senior Project Engineer at the University of Sheffield Advanced Manufacturing Research Centre (AMRC), where he leads early-stage machining and manufacturing projects focused on advanced materials and novel production processes for the aerospace, defence, and nuclear sectors.\n\nHis research expertise centres on sustainable machining technologies, particularly the application of supercritical CO₂ and Minimum Quantity Lubrication (MQL) in the machining of titanium alloys. His work has resulted in multiple peer-reviewed publications, international conference presentations, and successful industrial trials.\n\nPrior to joining the AMRC, Leon delivered complex engineering projects at SCX Special Projects, spanning hazard mitigation, materials and process development, and the management of large-scale bespoke infrastructure programmes.\n\nLeon is particularly passionate about bridging the gap between academic innovation and industrial adoption, helping manufacturers realise both productivity improvements and sustainability benefits through advanced manufacturing technologies."
     },
     {
       "label": "Keynote 3",

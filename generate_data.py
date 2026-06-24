@@ -251,7 +251,22 @@ DATA = {
     "photo":"img/keynote_eladio.jpg",
     "bio":"Eladio Hurtado Molina is a leading expert in wind turbine component reliability, currently serving as Lead Engineer for Blade Bearings at Vestas. After earning his PhD from the University of Sheffield in 2022, he successfully transitioned from small-scale wear research to validating components for the world's largest multi-MW wind turbines. Today, he continues to bridge the gap between industry and academia by managing a strategic collaboration between Vestas and the University of Sheffield."},
    {"label":"Keynote 2", "name":"Leon Proud",
-    "affil":"Advanced Manufacturing Research Centre (AMRC)", "photo":"", "bio":""},
+    "affil":"Senior Project Engineer — University of Sheffield AMRC", "photo":"",
+    "bio":(
+     "Dr Leon Proud is a Senior Project Engineer at the University of Sheffield Advanced "
+     "Manufacturing Research Centre (AMRC), where he leads early-stage machining and "
+     "manufacturing projects focused on advanced materials and novel production processes "
+     "for the aerospace, defence, and nuclear sectors.\n\n"
+     "His research expertise centres on sustainable machining technologies, particularly the "
+     "application of supercritical CO₂ and Minimum Quantity Lubrication (MQL) in the machining "
+     "of titanium alloys. His work has resulted in multiple peer-reviewed publications, "
+     "international conference presentations, and successful industrial trials.\n\n"
+     "Prior to joining the AMRC, Leon delivered complex engineering projects at SCX Special "
+     "Projects, spanning hazard mitigation, materials and process development, and the "
+     "management of large-scale bespoke infrastructure programmes.\n\n"
+     "Leon is particularly passionate about bridging the gap between academic innovation and "
+     "industrial adoption, helping manufacturers realise both productivity improvements and "
+     "sustainability benefits through advanced manufacturing technologies.")},
    {"label":"Keynote 3", "name":"Roger Lewis",
     "affil":"Professor of Mechanical Engineering, University of Sheffield",
     "photo":"img/keynote_lewis.jpg",

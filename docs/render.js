@@ -127,7 +127,7 @@
       <div class="klabel">${esc(k.label)}</div>
       <h3>${esc(k.name)}</h3>
       ${k.affil ? `<div class="kaffil">${esc(k.affil)}</div>` : ""}
-      ${k.bio ? `<p class="kbio">${esc(k.bio)}</p>` : ""}</div>`;
+      ${k.bio ? absParas(k.bio).map(p => `<p class="kbio">${esc(p)}</p>`).join("") : ""}</div>`;
     ks.appendChild(d);
   });
   chrome(ks, "Keynote Speakers");
