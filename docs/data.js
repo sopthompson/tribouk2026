@@ -81,7 +81,7 @@ window.DATA = {
               "title": "Condition monitoring of lubricant degradation in journal bearing system based on wireless on-rotor sensing method"
             }
           ],
-          "chair": "Alvaro Barrueto"
+          "chair": "Alvaro Barrueto Novoa"
         },
         {
           "kind": "break",
@@ -439,7 +439,7 @@ window.DATA = {
     ],
     "poster": [
       {
-        "name": "Alvaro Barrueto",
+        "name": "Alvaro Barrueto Novoa",
         "uni": "University of Sheffield",
         "title": "How to replenish lubricant in an oscillating wind turbine blade bearing raceway",
         "abstract": "Wind turbine blade bearings connect the blades to the hub and allow them to pitch (rotate) according to varying wind speed. Blade pitching generates small-amplitude oscillations that push grease out of the contact and generate lubricant starvation. This research project examines raceway surface wear generated under blade bearing conditions, and which preventive strategies can be developed to mitigate raceway damage.",
@@ -551,7 +551,7 @@ window.DATA = {
       "role": "IT Lead"
     },
     {
-      "name": "Alvaro Novoa",
+      "name": "Alvaro Barrueto Novoa",
       "role": "Social Media & Branding Lead"
     }
   ],

@@ -42,7 +42,7 @@ def fix_uni(s):
     return UNI_CANON.get(u.lower(), u)
 
 # fix names submitted with inconsistent capitalisation
-NAME_CANON = {"yuyang yuan": "Yuyang Yuan"}
+NAME_CANON = {"yuyang yuan": "Yuyang Yuan", "alvaro barrueto": "Alvaro Barrueto Novoa"}
 def fix_name(n):
     return NAME_CANON.get(n.lower(), n)
 
@@ -152,7 +152,7 @@ def session(code):
 # Session chairs — fill in the display name for each session and re-run; the
 # chair appears under the session title on the schedule (blank = nothing shown).
 CHAIRS = {  # from Schedule Plan v2 (full names)
- "S1": "Alvaro Barrueto",
+ "S1": "Alvaro Barrueto Novoa",
  "S2": "Mustafa Faisal",
  "S3": "Charlotte Currie & Jaden Davies",
  "S4": "Spike Thompson",
@@ -274,7 +274,7 @@ DATA = {
    {"name":"Mustafa Faisal",   "role":"Head of Content"},
    {"name":"Damien Dooley",    "role":"Socials, Welfare & Inclusivity Officer"},
    {"name":"Spike Thompson",   "role":"IT Lead"},
-   {"name":"Alvaro Novoa",     "role":"Social Media & Branding Lead"},
+   {"name":"Alvaro Barrueto Novoa", "role":"Social Media & Branding Lead"},
  ],
  "voting": {
    "intro": "Scan the QR codes or tap the link below to choose your favourites. Voting closes during the final coffee break on Day 2.",
