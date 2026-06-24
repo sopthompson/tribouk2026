@@ -177,7 +177,7 @@
     const cm = E("section", "sheet page-break");
     cm.appendChild(E("h1", "title", "Organising Committee"));
     cm.appendChild(E("p", "copy",
-      "TriboUK 2026 is organised by the following team — please feel free to approach any of us during the event."));
+      "TriboUK 2026 is organised by the following team, feel free to approach any of us during the event."));
     D.committee.forEach(m => {
       const d = E("div", "committee");
       const ph = m.photo

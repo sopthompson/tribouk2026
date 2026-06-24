@@ -170,7 +170,7 @@
   if (D.committee && D.committee.length) {
     const cm = E("section"); cm.id = "committee";
     cm.appendChild(E("h2", "sec", "Organising Committee"));
-    cm.appendChild(E("p", null, "TriboUK 2026 is organised by the following team — feel free to approach any of us during the event."));
+    cm.appendChild(E("p", null, "TriboUK 2026 is organised by the following team, feel free to approach any of us during the event."));
     D.committee.forEach(m => {
       const d = E("div", "keynote");
       const ph = m.photo
