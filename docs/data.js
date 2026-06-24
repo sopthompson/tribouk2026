@@ -587,6 +587,11 @@ window.DATA = {
       "url": "https://www.cntech.co.uk"
     },
     {
+      "img": "img/Phoenix_Tribology_logo.jpg",
+      "name": "Phoenix Tribology",
+      "url": "https://www.phoenix-tribology.com"
+    },
+    {
       "img": "img/Surface_Ventures_logo.png",
       "name": "Surface Ventures",
       "url": "https://surfaceventures.org"

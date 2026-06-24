@@ -287,6 +287,7 @@ DATA = {
    {"img":"img/PCS_Logo_with_strap_line.png", "name":"PCS Instruments", "url":"https://pcs-instruments.com"},
    {"img":"img/Rtec-High-Res-Rtec-Instruments-Logo-M-01A.png", "name":"Rtec Instruments", "url":"https://rtec-instruments.com"},
    {"img":"img/CN_Tech_-_MAIN_CN_Tech_Logo.png", "name":"CN Tech", "url":"https://www.cntech.co.uk"},
+   {"img":"img/Phoenix_Tribology_logo.jpg", "name":"Phoenix Tribology", "url":"https://www.phoenix-tribology.com"},
    {"img":"img/Surface_Ventures_logo.png", "name":"Surface Ventures", "url":"https://surfaceventures.org"},
    {"img":"img/Tribonet_logo.png", "name":"Tribonet", "url":"https://www.tribonet.org"},
    {"img":"img/Mechanical-Engineers-Logo-HR.png", "name":"Institution of Mechanical Engineers", "url":"https://www.imeche.org"},
