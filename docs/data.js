@@ -520,11 +520,11 @@ window.DATA = {
   "committee": [
     {
       "name": "Jaden Davies",
-      "role": "Chair"
+      "role": "Co-Chair"
     },
     {
       "name": "Charlotte Currie",
-      "role": "Secretary / Administration Lead"
+      "role": "Co-Chair & Secretary"
     },
     {
       "name": "Beatrice Green",
@@ -536,11 +536,11 @@ window.DATA = {
     },
     {
       "name": "Forbes Gusha",
-      "role": "Head of Operations (Logistics)"
+      "role": "Head of Operations"
     },
     {
       "name": "Mustafa Faisal",
-      "role": "Head of Content (Abstracts & Speakers)"
+      "role": "Head of Content"
     },
     {
       "name": "Damien Dooley",
@@ -548,11 +548,11 @@ window.DATA = {
     },
     {
       "name": "Spike Thompson",
-      "role": "Webmaster (IT Lead)"
+      "role": "IT Lead"
     },
     {
       "name": "Alvaro Novoa",
-      "role": "Social Media Manager & Creative / Branding Lead"
+      "role": "Social Media & Branding Lead"
     }
   ],
   "voting": {

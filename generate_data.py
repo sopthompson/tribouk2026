@@ -266,15 +266,15 @@ DATA = {
  # Organising committee — add members as {"name","role","bio"} (and an optional
  # "photo":"img/..."); the section appears automatically once populated.
  "committee": [
-   {"name":"Jaden Davies",     "role":"Chair"},
-   {"name":"Charlotte Currie", "role":"Secretary / Administration Lead"},
+   {"name":"Jaden Davies",     "role":"Co-Chair"},
+   {"name":"Charlotte Currie", "role":"Co-Chair & Secretary"},
    {"name":"Beatrice Green",   "role":"Head of Sponsorship"},
    {"name":"Joseph Fields",    "role":"Treasurer"},
-   {"name":"Forbes Gusha",     "role":"Head of Operations (Logistics)"},
-   {"name":"Mustafa Faisal",   "role":"Head of Content (Abstracts & Speakers)"},
+   {"name":"Forbes Gusha",     "role":"Head of Operations"},
+   {"name":"Mustafa Faisal",   "role":"Head of Content"},
    {"name":"Damien Dooley",    "role":"Socials, Welfare & Inclusivity Officer"},
-   {"name":"Spike Thompson",   "role":"Webmaster (IT Lead)"},
-   {"name":"Alvaro Novoa",     "role":"Social Media Manager & Creative / Branding Lead"},
+   {"name":"Spike Thompson",   "role":"IT Lead"},
+   {"name":"Alvaro Novoa",     "role":"Social Media & Branding Lead"},
  ],
  "voting": {
    "intro": "Scan the QR codes or tap the link below to choose your favourites. Voting closes during the final coffee break on Day 2.",
