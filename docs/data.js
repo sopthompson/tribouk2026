@@ -473,6 +473,13 @@ window.DATA = {
         "keywords": "Composites; solid lubricants; silicon carbide; dry gas seals; spark plasma sintering"
       },
       {
+        "name": "Forbes Gusha",
+        "uni": "University of Sheffield",
+        "title": "Tribological assessment of recycled titanium alloys as alternative railway wheel materials",
+        "abstract": "Increasing the life of railway wheels is important in reducing the carbon footprint associated with their production and lost revenue from wheel turning to return them to profile. It is reported that a reduction in wheel damage can be achieved by reducing the dynamic forces at the wheel/rail interface which can be achieved by reducing the unsprung mass of wheels. This could be achieved using a lower density material such as titanium. While titanium alloys were previously explored in small-scale twin-disc tests, the approach was not representative of real wheel service conditions. The aim of this work is to assess the potential use of titanium as a railway wheel material through assessing its tribological performance which includes assessing wear rates; surface and sub-surface evolution and wear debris.",
+        "keywords": "twin-disc testing, railway wheels, rolling contact fatigue, wear"
+      },
+      {
         "name": "Jaden Davies",
         "uni": "University of Sheffield",
         "title": "Ultrasonic measurement of lubricant film thickness in ball-raceway contacts of rolling element bearings",

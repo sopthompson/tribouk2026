@@ -116,6 +116,20 @@ MANUAL = [
       abstract="", keywords="Lubrication, Rolling Element Bearings, Ultrasound"),
  dict(name="Nigel Shaw", uni="University of Sheffield", pref="oral",
       title="Title to be confirmed", abstract="", keywords=""),
+ dict(name="Forbes Gusha", uni="University of Sheffield", pref="poster",
+      title="Tribological assessment of recycled titanium alloys as alternative railway wheel materials",
+      keywords="twin-disc testing, railway wheels, rolling contact fatigue, wear",
+      abstract=(
+       "Increasing the life of railway wheels is important in reducing the carbon footprint "
+       "associated with their production and lost revenue from wheel turning to return them to "
+       "profile. It is reported that a reduction in wheel damage can be achieved by reducing the "
+       "dynamic forces at the wheel/rail interface which can be achieved by reducing the unsprung "
+       "mass of wheels. This could be achieved using a lower density material such as titanium. "
+       "While titanium alloys were previously explored in small-scale twin-disc tests, the approach "
+       "was not representative of real wheel service conditions. The aim of this work is to assess "
+       "the potential use of titanium as a railway wheel material through assessing its tribological "
+       "performance which includes assessing wear rates; surface and sub-surface evolution and "
+       "wear debris.")),
 ]
 _have = {norm(a["name"]) for a in abstracts}
 abstracts += [m for m in MANUAL if norm(m["name"]) not in _have]
