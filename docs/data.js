@@ -79,6 +79,12 @@ window.DATA = {
               "name": "Zhifeng Hu",
               "uni": "University of Huddersfield",
               "title": "Condition monitoring of lubricant degradation in journal bearing system based on wireless on-rotor sensing method"
+            },
+            {
+              "time": "10:55",
+              "name": "Nigel Shaw",
+              "uni": "University of Sheffield",
+              "title": "Title to be confirmed"
             }
           ],
           "chair": "Alvaro Barrueto Novoa"
@@ -344,6 +350,13 @@ window.DATA = {
         "title": "Condition monitoring of lubricant degradation in journal bearing system based on wireless on-rotor sensing method",
         "abstract": "Friction-induced vibrations in journal bearings are typically caused by inadequate lubrication, and lubricant properties play a vital role in preventing such abnormal vibrations. Among numerous lubricant performance indicators, viscosity is one of the most critical factors affecting the stable operation of journal bearings. Therefore, investigating the effect of lubricant viscosity on the friction behavior of journal bearings is fundamentally important. This paper employed a wireless acceleration sensing method to investigate the effects of three lubricants with different viscosities on friction-induced vibrations in a journal bearing system. It was found that higher-viscosity lubricants effectively mitigate high-frequency resonance in journal bearings. Experimental results demonstrate that high-viscosity lubricants can significantly reduce undesirable vibration behavior caused by friction in journal bearings. Additionally, the results validate that the wireless acceleration sensing technique can effectively distinguish the vibration response of journal bearings influenced by lubricant viscosity.",
         "keywords": "Viscosity degradation; Journal bearings; Friction-induced vibration; Wireless on-rotor sensing."
+      },
+      {
+        "name": "Nigel Shaw",
+        "uni": "University of Sheffield",
+        "title": "Title to be confirmed",
+        "abstract": "",
+        "keywords": ""
       },
       {
         "name": "Sofia Mushtaq",

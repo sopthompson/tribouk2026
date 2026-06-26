@@ -106,6 +106,20 @@ for r in list(ws.iter_rows(values_only=True))[1:]:
     name = " ".join(p)
     abstracts.append(dict(name=fix_name(name), uni=fix_uni(r[4]), title=fix_title(r[8]),
                           keywords=clean(r[9]), abstract=clean_abs(r[10]), pref=clean(r[12])))
+
+# manual presenters not (yet) in the accepted form responses. Use title="Title to
+# be confirmed" / abstract="" as placeholders. Deduped by name, so each drops out
+# automatically once the same person appears in the form. (Never store emails.)
+MANUAL = [
+ dict(name="Jaden Davies", uni="University of Sheffield", pref="poster",
+      title="Ultrasonic measurement of lubricant film thickness in ball-raceway contacts of rolling element bearings",
+      abstract="", keywords="Lubrication, Rolling Element Bearings, Ultrasound"),
+ dict(name="Nigel Shaw", uni="University of Sheffield", pref="oral",
+      title="Title to be confirmed", abstract="", keywords=""),
+]
+_have = {norm(a["name"]) for a in abstracts}
+abstracts += [m for m in MANUAL if norm(m["name"]) not in _have]
+
 # presenters withdrawn from the programme — removed from schedule and abstracts
 WITHDRAWN = {norm("Michael Bartram")}
 abstracts = [a for a in abstracts if norm(a["name"]) not in WITHDRAWN]
@@ -140,7 +154,7 @@ def uni(n): return uni_by_name.get(norm(n), "")
 
 # ---- presentation sessions (running order) ----
 SESSIONS = {
- "S1": [("10:15","Yun Zhao"),("10:35","Zhifeng Hu")],
+ "S1": [("10:15","Yun Zhao"),("10:35","Zhifeng Hu"),("10:55","Nigel Shaw")],
  "S2": [("11:30","Sofia Mushtaq"),("11:50","Zhen Dong"),("12:10","Osian Thomas")],
  "S3": [("10:00","Song Yang"),("10:20","Oluwatamilore Adenipekun"),("10:40","Siyu Wang")],
  "S4": [("11:15","Ziyuan Ren"),("11:35","Seona Mauchline"),("11:55","Charlotte Currie"),("12:15","Paula Sebastian Asenjo")],
@@ -214,30 +228,15 @@ days = [
  ]},
 ]
 
-# ---- manual additions (presenters not yet in the accepted form responses) ----
-# Each is {name, uni, title, abstract, keywords}; leave abstract="" if not supplied
-# yet. Deduplicated by name, so these vanish automatically once they appear in the
-# form. (Never store submitter emails / personal data here.)
-EXTRA_ORAL = []
-EXTRA_POSTERS = [
- dict(name="Jaden Davies", uni="University of Sheffield",
-      title="Ultrasonic measurement of lubricant film thickness in ball-raceway contacts of rolling element bearings",
-      abstract="", keywords="Lubrication, Rolling Element Bearings, Ultrasound"),
-]
-
 # ---- order abstracts: oral by running order, posters alphabetical ----
+# (manual presenters were merged into `abstracts` above, so they flow through here too)
 roster = [norm(n) for s in ("S1","S2","S3","S4","S5") for (_, n) in SESSIONS[s]]
 def oidx(a):
     k = norm(a["name"]); return roster.index(k) if k in roster else 999
 def absrec(a): return dict(name=a["name"], uni=a["uni"], title=a["title"],
                            abstract=a["abstract"], keywords=a["keywords"])
-def add_extra(lst, extra):
-    have = {norm(a["name"]) for a in lst}
-    return lst + [e for e in extra if norm(e["name"]) not in have]
 oral   = [absrec(a) for a in sorted([x for x in abstracts if "oral"   in x["pref"].lower()], key=lambda a:(oidx(a), a["name"]))]
-oral   = add_extra(oral, EXTRA_ORAL)
 poster = [absrec(a) for a in sorted([x for x in abstracts if "poster" in x["pref"].lower()], key=lambda a:a["name"])]
-poster = sorted(add_extra(poster, EXTRA_POSTERS), key=lambda a:a["name"])
 
 DATA = {
  "conf": {"name":"TriboUK 2026", "sub":"Postgraduate Tribology Conference",
