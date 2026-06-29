@@ -116,6 +116,8 @@ MANUAL = [
       abstract="", keywords="Lubrication, Rolling Element Bearings, Ultrasound"),
  dict(name="Nigel Shaw", uni="University of Sheffield", pref="oral",
       title="Title to be confirmed", abstract="", keywords=""),
+ dict(name="Joe Harrison", uni="University of Sheffield", pref="oral",
+      title="Title to be confirmed", abstract="", keywords=""),
  dict(name="Forbes Gusha", uni="University of Sheffield", pref="poster",
       title="Tribological assessment of recycled titanium alloys as alternative railway wheel materials",
       keywords="twin-disc testing, railway wheels, rolling contact fatigue, wear",
@@ -135,7 +137,7 @@ _have = {norm(a["name"]) for a in abstracts}
 abstracts += [m for m in MANUAL if norm(m["name"]) not in _have]
 
 # presenters withdrawn from the programme — removed from schedule and abstracts
-WITHDRAWN = {norm("Michael Bartram")}
+WITHDRAWN = {norm("Michael Bartram"), norm("Sofia Mushtaq")}
 abstracts = [a for a in abstracts if norm(a["name"]) not in WITHDRAWN]
 
 # updated title / abstract supplied after submission, keyed by normalised name
@@ -169,7 +171,7 @@ def uni(n): return uni_by_name.get(norm(n), "")
 # ---- presentation sessions (running order) ----
 SESSIONS = {
  "S1": [("10:15","Yun Zhao"),("10:35","Zhifeng Hu"),("10:55","Nigel Shaw")],
- "S2": [("11:30","Sofia Mushtaq"),("11:50","Zhen Dong"),("12:10","Osian Thomas")],
+ "S2": [("11:30","Joe Harrison"),("11:50","Zhen Dong"),("12:10","Osian Thomas")],
  "S3": [("10:00","Song Yang"),("10:20","Oluwatamilore Adenipekun"),("10:40","Siyu Wang")],
  "S4": [("11:15","Ziyuan Ren"),("11:35","Seona Mauchline"),("11:55","Charlotte Currie"),("12:15","Paula Sebastian Asenjo")],
  "S5": [("14:30","Musab Rizwan Kazi"),("14:50","Uresha Madhuwanthi Herath Mudiyanselage"),("15:10","Faraz Shaikh")],

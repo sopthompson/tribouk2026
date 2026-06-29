@@ -102,9 +102,9 @@ window.DATA = {
           "talks": [
             {
               "time": "11:30",
-              "name": "Sofia Mushtaq",
+              "name": "Joe Harrison",
               "uni": "University of Sheffield",
-              "title": "Measuring forces experienced on human skin during frictional interactions through a combined approach of digital image correlation (DIC) based strain mapping and machine learning"
+              "title": "Title to be confirmed"
             },
             {
               "time": "11:50",
@@ -359,11 +359,11 @@ window.DATA = {
         "keywords": ""
       },
       {
-        "name": "Sofia Mushtaq",
+        "name": "Joe Harrison",
         "uni": "University of Sheffield",
-        "title": "Measuring forces experienced on human skin during frictional interactions through a combined approach of digital image correlation (DIC) based strain mapping and machine learning",
+        "title": "Title to be confirmed",
         "abstract": "",
-        "keywords": "DIC , Biomechanics, Skin strain"
+        "keywords": ""
       },
       {
         "name": "Zhen Dong",
