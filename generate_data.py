@@ -168,7 +168,7 @@ _have = {norm(a["name"]) for a in abstracts}
 abstracts += [m for m in MANUAL if norm(m["name"]) not in _have]
 
 # presenters withdrawn from the programme — removed from schedule and abstracts
-WITHDRAWN = {norm("Michael Bartram"), norm("Sofia Mushtaq")}
+WITHDRAWN = {norm("Michael Bartram"), norm("Sofia Mushtaq"), norm("Musab Rizwan Kazi")}
 abstracts = [a for a in abstracts if norm(a["name"]) not in WITHDRAWN]
 
 # updated title / abstract supplied after submission, keyed by normalised name
@@ -205,7 +205,7 @@ SESSIONS = {
  "S2": [("11:30","Joe Harrison"),("11:50","Zhen Dong"),("12:10","Osian Thomas")],
  "S3": [("10:00","Song Yang"),("10:20","Oluwatamilore Adenipekun"),("10:40","Siyu Wang")],
  "S4": [("11:15","Ziyuan Ren"),("11:35","Seona Mauchline"),("11:55","Charlotte Currie"),("12:15","Paula Sebastian Asenjo")],
- "S5": [("14:30","Musab Rizwan Kazi"),("14:50","Uresha Madhuwanthi Herath Mudiyanselage"),("15:10","Faraz Shaikh")],
+ "S5": [("14:30","Uresha Madhuwanthi Herath Mudiyanselage"),("14:50","Faraz Shaikh")],
 }
 def session(code):
     return [dict(time=t, name=n, uni=uni(n), title=ttl(n)) for (t, n) in SESSIONS[code]]

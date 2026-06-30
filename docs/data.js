@@ -297,18 +297,12 @@ window.DATA = {
           "talks": [
             {
               "time": "14:30",
-              "name": "Musab Rizwan Kazi",
-              "uni": "University of Lancashire",
-              "title": "Additive friction stir deposition (AFSD) for light weight alloys"
-            },
-            {
-              "time": "14:50",
               "name": "Uresha Madhuwanthi Herath Mudiyanselage",
               "uni": "Sheffield Hallam University",
               "title": "Slurry erosion and erosion-corrosion response of niobium as an alternative cladding material for neutron-producing targets at ISIS"
             },
             {
-              "time": "15:10",
+              "time": "14:50",
               "name": "Faraz Shaikh",
               "uni": "University of Leeds",
               "title": "Investigation of friction, wear and particle emissions from coated and uncoated commercial vehicle brake rotors using a small-scale tribological approach"
@@ -427,13 +421,6 @@ window.DATA = {
         "title": "Optimising radial air foil bearing performance: balancing clearance and stiffness for enhanced lift-off",
         "abstract": "Air Foil Radial Bearings (AFRB) are mainly used to support shaft weight, vibrations loads and to prevent the compressor and turbine wheel from rubbing against the housing. From a tribological point of view, the friction created by the air gap and the wear of the foils are investigated in order to reduce the tip clearances of the wheel.\nThe objective is to create the thinnest air film gap possible with the best acceptable losses and overall, still gain aerodynamic efficiency. Different clearances are obtained by changing the foil geometries. The ultimate goal is to test the bearings for lift-off and high speeds of up to 100k rpm, achieving minimal power losses and maximising net aerodynamics efficiency of the overall machine.\nAFRB are widely applied in high-speed turbomachinery that can run up to 100k rpm like micro gas turbines and air compressor. The challenges of reducing the compressor wheel’s tip clearance are that the bearing suffers more losses, higher friction and at high speeds it can overheat leading to ultimate failure. Thus, the results of this study will give guidance on how to reduce the bearing clearance but still perform in accordance to the customer’s compressor.\nA purpose-built centrifugal test rig, capable of reaching speeds up to 24k rpm will be presented. This is followed by a discussion on how the apparatus operates to measure friction for different rotational speeds and data is logged. In the obtained start-stop cycles of speed against friction, the friction measured before, during, and after the bearing’s lift-off will serve as key performance indicators. The final results will be presented to show how different foil geometries affect stiffness and lift-off performance of the bearing. Finally, the bearings undergo high-speed testing of up to 100k rpm to evaluate the aerodynamic performance of the bearings with different clearances. This project in as example on how tribology can be studied in air foil bearing to improve the overall efficiency of real-life machines.",
         "keywords": "Air Foil Bearings, hydrodynamics, high-speed operations, lift-off performance, bump foil stiffness"
-      },
-      {
-        "name": "Musab Rizwan Kazi",
-        "uni": "University of Lancashire",
-        "title": "Additive friction stir deposition (AFSD) for light weight alloys",
-        "abstract": "A new solid-state additive manufacturing method called Additive Friction Stir Deposition (AFSD) makes it possible to deposit metallic materials below their melting points, which lowers flaws like porosity and hot cracking. The aim of this study is to understand the process and optimise the deposition quality using numerical and experimental methods. The study will focus on processing lightweight alloys (Al, Mg, and Ti) using AFSD. Even though AFSD has many benefits for applications in the automotive, marine, and aerospace industries, there are still difficulties associated with the process due to the various parameters that affect the quality.",
-        "keywords": "Additive Friction Stir Deposition (AFSD), Solid-State Additive Manufacturing, Lightweight Alloys, Process Optimisation, Deposition Quality"
       },
       {
         "name": "Uresha Madhuwanthi Herath Mudiyanselage",
