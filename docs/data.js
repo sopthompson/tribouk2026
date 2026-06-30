@@ -11,14 +11,14 @@ window.DATA = {
     {
       "label": "Keynote 1",
       "name": "Eladio Hurtado Molina",
-      "affil": "Lead Engineer, Blade Bearings — Vestas",
+      "affil": "Lead Engineer, Blade Bearings, Vestas",
       "photo": "img/keynote_eladio.jpg",
       "bio": "Eladio Hurtado Molina is a leading expert in wind turbine component reliability, currently serving as Lead Engineer for Blade Bearings at Vestas. After earning his PhD from the University of Sheffield in 2022, he successfully transitioned from small-scale wear research to validating components for the world's largest multi-MW wind turbines. Today, he continues to bridge the gap between industry and academia by managing a strategic collaboration between Vestas and the University of Sheffield."
     },
     {
       "label": "Keynote 2",
       "name": "Leon Proud",
-      "affil": "Senior Project Engineer — University of Sheffield AMRC",
+      "affil": "Senior Project Engineer, University of Sheffield AMRC",
       "photo": "",
       "bio": "Dr Leon Proud is a Senior Project Engineer at the University of Sheffield Advanced Manufacturing Research Centre (AMRC), where he leads early-stage machining and manufacturing projects focused on advanced materials and novel production processes for the aerospace, defence, and nuclear sectors.\n\nHis research expertise centres on sustainable machining technologies, particularly the application of supercritical CO₂ and Minimum Quantity Lubrication (MQL) in the machining of titanium alloys. His work has resulted in multiple peer-reviewed publications, international conference presentations, and successful industrial trials.\n\nPrior to joining the AMRC, Leon delivered complex engineering projects at SCX Special Projects, spanning hazard mitigation, materials and process development, and the management of large-scale bespoke infrastructure programmes.\n\nLeon is particularly passionate about bridging the gap between academic innovation and industrial adoption, helping manufacturers realise both productivity improvements and sustainability benefits through advanced manufacturing technologies."
     },
@@ -32,7 +32,7 @@ window.DATA = {
     {
       "label": "Keynote 4",
       "name": "Klaus-Dieter Meck",
-      "affil": "Innovation Director, Core Technology & Simulation — John Crane",
+      "affil": "Innovation Director, Core Technology & Simulation, John Crane",
       "photo": "img/keynote_meck.jpg",
       "bio": "Klaus-D. Meck is the Innovation Director — Core Technology & Simulation at John Crane, a division of Smiths Group plc, a global manufacturer and service provider for mechanical seals and supporting equipment. Mr Meck has over 30 years of experience in sealing technology and rotating equipment, with roles in R&D and Application Engineering. He received his master's degree from the University of Stuttgart, Germany and is the author of several papers related to rotating equipment and critical components. He is named inventor on several patents related to mechanical seals, power transmission couplings, and condition monitoring. Mr Meck has recently been appointed as Visiting Professor to the School of Mechanical, Aerospace & Civil Engineering at the University of Sheffield."
     }
