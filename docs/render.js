@@ -158,7 +158,7 @@
     return b;
   };
   const groups = [];
-  for (let i = 0; i < D.sponsors.length; i += 3) groups.push(D.sponsors.slice(i, i + 3));
+  for (let i = 0; i < D.sponsors.length; i += 5) groups.push(D.sponsors.slice(i, i + 5));
   groups.forEach((group, gi) => {
     const sp = E("section", "sheet page-break");
     if (gi === 0) {
