@@ -84,7 +84,7 @@ window.DATA = {
               "time": "10:55",
               "name": "Nigel Shaw",
               "uni": "University of Sheffield",
-              "title": "Title to be confirmed"
+              "title": "A causal analysis-based approach for understanding the research literature on rail squat-type defects – outline and feasibility"
             }
           ],
           "chair": "Alvaro Barrueto Novoa"
@@ -354,7 +354,7 @@ window.DATA = {
       {
         "name": "Nigel Shaw",
         "uni": "University of Sheffield",
-        "title": "Title to be confirmed",
+        "title": "A causal analysis-based approach for understanding the research literature on rail squat-type defects – outline and feasibility",
         "abstract": "",
         "keywords": ""
       },
