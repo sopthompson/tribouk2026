@@ -125,7 +125,8 @@ p.copy{ font-size:10.5pt; margin-bottom:3.5mm; text-align:justify; }
 .abs-item .apar:last-child{ margin-bottom:0; }
 
 /* ===== ORGANISING COMMITTEE ===== */
-.committee{ break-inside:avoid; margin-bottom:6mm; display:flex; gap:6mm; align-items:flex-start; }
+.committee-grid{ display:grid; grid-template-columns:1fr 1fr; column-gap:10mm; row-gap:7mm; }
+.committee{ break-inside:avoid; display:flex; gap:5mm; align-items:flex-start; }
 .committee .cphoto{ width:24mm; height:24mm; flex:none; border-radius:50%; object-fit:cover;
   object-position:top; border:.8mm solid var(--lilac); background:var(--lilac-t); }
 .committee .cphoto-ph{ display:flex; align-items:center; justify-content:center;

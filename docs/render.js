@@ -178,6 +178,7 @@
     cm.appendChild(E("h1", "title", "Organising Committee"));
     cm.appendChild(E("p", "copy",
       "TriboUK 2026 is organised by the following team, feel free to approach any of us during the event."));
+    const cgrid = E("div", "committee-grid");
     D.committee.forEach(m => {
       const d = E("div", "committee");
       const ph = m.photo
@@ -186,8 +187,9 @@
       d.innerHTML = ph + `<div class="cbody"><h3>${esc(m.name)}</h3>`
         + (m.role ? `<div class="crole">${esc(m.role)}</div>` : "")
         + (m.bio ? `<p class="cbio">${esc(m.bio)}</p>` : "") + `</div>`;
-      cm.appendChild(d);
+      cgrid.appendChild(d);
     });
+    cm.appendChild(cgrid);
     chrome(cm, "Organising Committee");
     add(cm);
   }
