@@ -110,15 +110,45 @@ for r in list(ws.iter_rows(values_only=True))[1:]:
 # manual presenters not (yet) in the accepted form responses. Use title="Title to
 # be confirmed" / abstract="" as placeholders. Deduped by name, so each drops out
 # automatically once the same person appears in the form. (Never store emails.)
+# shared by Nigel Shaw and Joe Harrison (same talk title + abstract)
+SQUAT_TITLE = ("A causal analysis-based approach for understanding the research literature "
+               "on rail squat-type defects – outline and feasibility")
+SQUAT_ABS = (
+ "Investigating the underlying causes of rail squat-type defects requires a methodological "
+ "approach. Published research suggests a complex dependence on various factors including "
+ "vehicle-track interaction forces, rolling stock characteristics, vehicle dynamics, rail "
+ "support and environmental conditions and rail material response to loading.\n\n"
+ "This presentation seeks to examine the extension of causal analysis-based techniques that "
+ "have found application in certain technically demanding rail accident investigations, such "
+ "as those involving derailment by flange climbing. In applying these to the research base for "
+ "rail squats and related topics, and with a focus on rail failure as the consequence, the "
+ "objective is a systematic evidence-based review of the degree to which the factors relating "
+ "to defect initiation and growth are understood. A further objective is to develop an "
+ "understanding of the factor interrelationships, and the factors that, ultimately, it may be "
+ "possible to discount.")
+
 MANUAL = [
  dict(name="Jaden Davies", uni="University of Sheffield", pref="poster",
       title="Ultrasonic measurement of lubricant film thickness in ball-raceway contacts of rolling element bearings",
       abstract="", keywords="Lubrication, Rolling Element Bearings, Ultrasound"),
  dict(name="Nigel Shaw", uni="University of Sheffield", pref="oral",
-      title="A causal analysis-based approach for understanding the research literature on rail squat-type defects – outline and feasibility",
-      abstract="", keywords=""),
+      title=SQUAT_TITLE, abstract=SQUAT_ABS, keywords=""),
  dict(name="Joe Harrison", uni="University of Sheffield", pref="oral",
-      title="Title to be confirmed", abstract="", keywords=""),
+      title="High temperature sliding wear and glaze formation in nickel-based superalloys",
+      keywords="", abstract=(
+       "Gas turbine combustors present some of the most challenging environments in surface "
+       "engineering. Whilst superalloys offer excellent oxidation resistance, high yield strength "
+       "and creep resistance, they remain susceptible to wear where conventional protection fails. "
+       "The formation of protective glaze layers, compacted and sintered oxide wear debris, offers "
+       "a potential wear mitigation strategy by lowering coefficients of friction (CoF) and "
+       "transitioning systems from severe to mild wear.\n\n"
+       "This study investigates glaze formation, breakdown and thermal instability during "
+       "reciprocating sliding, focusing on localised frictional heating. Utilising a bespoke test "
+       "platform, dry sliding tests were performed on C263 superalloy from 20 to 600°C to map wear "
+       "transitions. Results revealed a distinct transition zone where CoF fluctuations and transient "
+       "\"bouncy\" behaviour occurred. This instability is driven by a thermal feedback loop where "
+       "localised heating governs glaze stability, providing vital criteria for forecasting component "
+       "longevity in future aerospace applications.")),
  dict(name="Forbes Gusha", uni="University of Sheffield", pref="poster",
       title="Tribological assessment of recycled titanium alloys as alternative railway wheel materials",
       keywords="twin-disc testing, railway wheels, rolling contact fatigue, wear",
