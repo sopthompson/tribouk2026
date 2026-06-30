@@ -297,15 +297,15 @@ DATA = {
  # Organising committee — add members as {"name","role","bio"} (and an optional
  # "photo":"img/..."); the section appears automatically once populated.
  "committee": [
-   {"name":"Jaden Davies",     "role":"Co-Chair"},
-   {"name":"Charlotte Currie", "role":"Co-Chair & Secretary"},
-   {"name":"Beatrice Green",   "role":"Head of Sponsorship"},
-   {"name":"Joseph Fields",    "role":"Treasurer"},
-   {"name":"Forbes Gusha",     "role":"Head of Operations"},
-   {"name":"Mustafa Faisal",   "role":"Head of Content"},
-   {"name":"Damien Dooley",    "role":"Socials, Welfare & Inclusivity Officer"},
-   {"name":"Spike Thompson",   "role":"IT Lead"},
-   {"name":"Alvaro Barrueto Novoa", "role":"Social Media & Branding Lead"},
+   {"name":"Jaden Davies",     "role":"Co-Chair", "photo":"img/committee_jaden.jpg"},
+   {"name":"Charlotte Currie", "role":"Co-Chair & Secretary", "photo":"img/committee_charlotte.jpg"},
+   {"name":"Beatrice Green",   "role":"Head of Sponsorship", "photo":"img/committee_bea.jpg"},
+   {"name":"Joseph Fields",    "role":"Treasurer", "photo":"img/committee_joe.jpg"},
+   {"name":"Forbes Gusha",     "role":"Head of Operations", "photo":"img/committee_forbes.jpg"},
+   {"name":"Mustafa Faisal",   "role":"Head of Content", "photo":"img/committee_mustafa.jpg"},
+   {"name":"Damien Dooley",    "role":"Socials, Welfare & Inclusivity Officer", "photo":"img/committee_damien.jpg"},
+   {"name":"Spike Thompson",   "role":"IT Lead", "photo":"img/committee_spike.jpg"},
+   {"name":"Alvaro Barrueto Novoa", "role":"Social Media & Branding Lead", "photo":"img/committee_alvaro.jpg"},
  ],
  "voting": {
    "intro": "Scan the QR codes or tap the link below to choose your favourites. Voting closes during the final coffee break on Day 2.",

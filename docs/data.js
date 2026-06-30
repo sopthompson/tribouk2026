@@ -540,39 +540,48 @@ window.DATA = {
   "committee": [
     {
       "name": "Jaden Davies",
-      "role": "Co-Chair"
+      "role": "Co-Chair",
+      "photo": "img/committee_jaden.jpg"
     },
     {
       "name": "Charlotte Currie",
-      "role": "Co-Chair & Secretary"
+      "role": "Co-Chair & Secretary",
+      "photo": "img/committee_charlotte.jpg"
     },
     {
       "name": "Beatrice Green",
-      "role": "Head of Sponsorship"
+      "role": "Head of Sponsorship",
+      "photo": "img/committee_bea.jpg"
     },
     {
       "name": "Joseph Fields",
-      "role": "Treasurer"
+      "role": "Treasurer",
+      "photo": "img/committee_joe.jpg"
     },
     {
       "name": "Forbes Gusha",
-      "role": "Head of Operations"
+      "role": "Head of Operations",
+      "photo": "img/committee_forbes.jpg"
     },
     {
       "name": "Mustafa Faisal",
-      "role": "Head of Content"
+      "role": "Head of Content",
+      "photo": "img/committee_mustafa.jpg"
     },
     {
       "name": "Damien Dooley",
-      "role": "Socials, Welfare & Inclusivity Officer"
+      "role": "Socials, Welfare & Inclusivity Officer",
+      "photo": "img/committee_damien.jpg"
     },
     {
       "name": "Spike Thompson",
-      "role": "IT Lead"
+      "role": "IT Lead",
+      "photo": "img/committee_spike.jpg"
     },
     {
       "name": "Alvaro Barrueto Novoa",
-      "role": "Social Media & Branding Lead"
+      "role": "Social Media & Branding Lead",
+      "photo": "img/committee_alvaro.jpg"
     }
   ],
   "voting": {
