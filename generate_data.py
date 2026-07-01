@@ -128,9 +128,6 @@ SQUAT_ABS = (
  "possible to discount.")
 
 MANUAL = [
- dict(name="Jaden Davies", uni="University of Sheffield", pref="poster",
-      title="Ultrasonic measurement of lubricant film thickness in ball-raceway contacts of rolling element bearings",
-      abstract="", keywords="Lubrication, Rolling Element Bearings, Ultrasound"),
  dict(name="Nigel Shaw", uni="University of Sheffield", pref="oral",
       title=SQUAT_TITLE, abstract=SQUAT_ABS, keywords=""),
  dict(name="Joe Harrison", uni="University of Sheffield", pref="oral",

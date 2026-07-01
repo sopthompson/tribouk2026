@@ -462,13 +462,6 @@ window.DATA = {
         "keywords": "twin-disc testing, railway wheels, rolling contact fatigue, wear"
       },
       {
-        "name": "Jaden Davies",
-        "uni": "University of Sheffield",
-        "title": "Ultrasonic measurement of lubricant film thickness in ball-raceway contacts of rolling element bearings",
-        "abstract": "",
-        "keywords": "Lubrication, Rolling Element Bearings, Ultrasound"
-      },
-      {
         "name": "MM Raihan",
         "uni": "University of Leeds",
         "title": "Real-time wear-corrosion measurement using eddy current and electrochemistry sensing",
