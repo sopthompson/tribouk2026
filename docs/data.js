@@ -275,13 +275,8 @@ window.DATA = {
           "chair": "Spike Thompson"
         },
         {
-          "kind": "item",
-          "time": "12:35–13:00",
-          "label": "Poster flash talks"
-        },
-        {
           "kind": "break",
-          "time": "13:00–14:00",
+          "time": "12:35–14:00",
           "label": "Lunch & poster session"
         },
         {
