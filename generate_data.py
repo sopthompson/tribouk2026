@@ -281,6 +281,12 @@ def absrec(a): return dict(name=a["name"], uni=a["uni"], title=a["title"],
 oral   = [absrec(a) for a in sorted([x for x in abstracts if "oral"   in x["pref"].lower()], key=lambda a:(oidx(a), a["name"]))]
 poster = [absrec(a) for a in sorted([x for x in abstracts if "poster" in x["pref"].lower()], key=lambda a:a["name"])]
 
+# Yun Zhao also presents a poster — same title as the oral talk, no separate abstract
+_yz = next((a for a in oral if norm(a["name"]) == norm("Yun Zhao")), None)
+if _yz and not any(norm(p["name"]) == norm("Yun Zhao") for p in poster):
+    poster.append(dict(name=_yz["name"], uni=_yz["uni"], title=_yz["title"], abstract="", keywords=_yz["keywords"]))
+    poster.sort(key=lambda a: a["name"])
+
 DATA = {
  "conf": {"name":"TriboUK 2026", "sub":"Postgraduate Tribology Conference",
           "host":"University of Sheffield", "date":"1–2 July 2026"},

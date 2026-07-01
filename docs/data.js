@@ -497,6 +497,13 @@ window.DATA = {
         "keywords": "Sand, Tribology, Black Leaf layer, Friction, Rail"
       },
       {
+        "name": "Yun Zhao",
+        "uni": "Imperial College London",
+        "title": "Lubricating behaviour under electrified conditions",
+        "abstract": "",
+        "keywords": "Electrified tribology, lubricants, electric field, voltage, surface"
+      },
+      {
         "name": "Yuyang Yuan",
         "uni": "University of Leeds",
         "title": "Fabrication of photoluminescent thin films via tribochemical deposition of upconversion nanoparticles",
