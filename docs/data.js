@@ -301,6 +301,12 @@ window.DATA = {
               "name": "Faraz Shaikh",
               "uni": "University of Leeds",
               "title": "Investigation of friction, wear and particle emissions from coated and uncoated commercial vehicle brake rotors using a small-scale tribological approach"
+            },
+            {
+              "time": "15:10",
+              "name": "Michael Bartram",
+              "uni": "University of Sheffield",
+              "title": "An investigation into the efficacy of relubrication cycles in reducing wear in grease lubricated pitch bearings"
             }
           ],
           "chair": "Damien Dooley"
@@ -430,6 +436,13 @@ window.DATA = {
         "title": "Investigation of friction, wear and particle emissions from coated and uncoated commercial vehicle brake rotors using a small-scale tribological approach",
         "abstract": "Brake systems are a significant non-exhaust source of airborne particulate emissions, particularly in urban environments where regenerative braking is not always sufficient to eliminate friction braking events. While a large proportion of existing research has focused on passenger vehicles, there remains limited understanding of how commercial vehicle brake materials behave under demanding operating conditions involving higher loads, temperatures, and prolonged braking events.\n\nThis study investigates the tribological behaviour and particle emissions of coated and uncoated commercial vehicle brake rotors using a small-scale experimental approach. A laser-cladded titanium carbide (TiC) coated rotor was compared with a conventional grey cast iron (GCI) rotor under controlled laboratory conditions using a Bruker UMT TriboLab tribometer. Testing was based on a modified WLTP-style braking procedure adapted for small-scale operation. Friction behaviour, temperature response, wear characteristics, and airborne particle emissions were evaluated throughout the testing programme.\n\nParticle measurements were carried out using a Dekati ELPI+ system, while post-test surface analysis was performed using optical microscopy and surface characterisation techniques to assess wear mechanisms and transfer layer development. Initial findings show clear differences in friction stability, surface condition, and emission behaviour between the coated and uncoated rotor materials.\n\nThe work demonstrates how small-scale tribological testing can be used to investigate environmentally relevant brake wear behaviour while reducing the cost and complexity associated with full-scale dynamometer testing. The study also contributes towards the wider understanding of how advanced rotor coatings may influence future low-emission braking systems for commercial vehicles.",
         "keywords": "Brake particle emissions, Tribology, Commercial vehicle brakes, Wear and friction, Surface coatings"
+      },
+      {
+        "name": "Michael Bartram",
+        "uni": "University of Sheffield",
+        "title": "An investigation into the efficacy of relubrication cycles in reducing wear in grease lubricated pitch bearings",
+        "abstract": "A new testing machine has been developed that can analyse the effect of oscillation cycles on wear in grease lubricated ball bearings, scaled to simulate wind turbine pitch bearing operating conditions. The machine uses electrical impedance methods to measure lubricant film thickness in the contact, which has not been done before in an oscillating application. Initial tests indicate that the machine behaves as expected. Further testing will be done as the electrical impedance measurements are implemented. As part of the testing, the effect of relubrication cycles on wear will be investigated.",
+        "keywords": "Pitch bearings, grease, oscillation"
       }
     ],
     "poster": [
